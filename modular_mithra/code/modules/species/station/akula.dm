@@ -9,7 +9,6 @@
 	husk_icon = 'modular_mithra/icons/mob/human_races/species/akula/husk.dmi'
 	preview_icon = 'modular_mithra/icons/mob/human_races/species/akula/preview.dmi'
 	tail = "aktail"
-	tail_animation = 'modular_mithra/icons/mob/species/akula/tail.dmi'
 	limb_blend = ICON_MULTIPLY
 	tail_blend = ICON_MULTIPLY
 	hidden_from_codex = FALSE
