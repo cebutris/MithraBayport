@@ -2,8 +2,8 @@
 	Our gait will begin its saunter at the source, when the infant learns to crawl.*/
 
 /datum/species/akula
-	name = "Akula" //Not using defines here just yet. Remind me to do it later!
-	name_plural = "Akula" //Not using defines here just yet. Remind me to do it later!
+	name = SPECIES_AKULA
+	name_plural = SPECIES_AKULA
 	icobase = 'modular_mithra/icons/mob/human_races/species/akula/body.dmi'
 	deform = 'modular_mithra/icons/mob/human_races/species/akula/deformed_body.dmi'
 	husk_icon = 'modular_mithra/icons/mob/human_races/species/akula/husk.dmi'

@@ -2899,6 +2899,8 @@
 #include "maps\~mapsystem\maps_jobs.dm"
 #include "maps\~mapsystem\maps_unit_testing.dm"
 #include "maps\~unit_tests\unit_testing.dm"
+#include "modular_mithra\code\__defines\mobs.dm"
 #include "modular_mithra\code\modules\species\station\akula.dm"
+#include "modular_mithra\code\modules\sprite_accessories\_accessory_hair.dm"
 #include "~code\global_init.dm"
 // END_INCLUDE
