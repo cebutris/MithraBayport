@@ -1,4 +1,6 @@
-/**
+////////WARNING////////
+//	THIS FILE HAS BEEN BUTCHERED TO ADD CUSTOM SPECIES, ENSURE NO REGRESSIONS OCCUR WHEN SYNCING WITH UPSTREAM
+/*
 * DNA 2: The Spaghetti Strikes Back
 *
 * @author N3X15 <nexisentertainment@gmail.com>
@@ -33,9 +35,28 @@
 #define DNA_UI_GENDER      14
 #define DNA_UI_BEARD_STYLE 15
 #define DNA_UI_HAIR_STYLE  16
-#define DNA_UI_LENGTH      16 // Update this when you add something, or you WILL break shit.
+#define DNA_UI_EAR_STYLE   17 // snippet for custom species stuff
+#define DNA_UI_TAIL_STYLE  18
+#define DNA_UI_PLAYERSCALE 19
+#define DNA_UI_TAIL_R      20
+#define DNA_UI_TAIL_G      21
+#define DNA_UI_TAIL_B      22
+#define DNA_UI_TAIL2_R     23
+#define DNA_UI_TAIL2_G     24
+#define DNA_UI_TAIL2_B     25
+#define DNA_UI_EARS_R      26
+#define DNA_UI_EARS_G      27
+#define DNA_UI_EARS_B      28
+#define DNA_UI_EARS2_R     29
+#define DNA_UI_EARS2_G     30
+#define DNA_UI_EARS2_B     31
+#define DNA_UI_WING_STYLE  32
+#define DNA_UI_WING_R      33
+#define DNA_UI_WING_G      34
+#define DNA_UI_WING_B 		35 // end snippet
+#define DNA_UI_LENGTH      35 // Updated for all those custom species
 
-#define DNA_SE_LENGTH 27
+#define DNA_SE_LENGTH 46	//Formula for this is UI+11, hence the edit
 // For later:
 //#define DNA_SE_LENGTH 50 // Was STRUCDNASIZE, size 27. 15 new blocks added = 42, plus room to grow.
 
@@ -81,6 +102,13 @@ var/global/list/datum/dna/gene/dna_genes[0]
 	// From old dna.
 	var/b_type = "A+"  // Should probably change to an integer => string map but I'm lazy.
 	var/real_name          // Stores the real name of the person who originally got this dna datum. Used primarily for changelings,
+
+	// CUSTOM SPECIES
+	var/custom_species
+	var/base_species = "Human"
+	var/list/species_traits = list()
+	var/blood_color = "#A10808"
+	// CUSTOM SPECIES END
 
 	// New stuff
 	var/species = SPECIES_HUMAN
@@ -132,6 +160,58 @@ var/global/list/datum/dna/gene/dna_genes[0]
 	if(!character.f_style)
 		character.f_style = "Shaved"
 	var/beard	= GLOB.facial_hair_styles_list.Find(character.f_style)
+
+// MITHRAStation Edit Start
+
+	// Demi Ears
+	var/ear_style = 0
+	if(character.ear_style)
+		ear_style = ear_styles_list.Find(character.ear_style.type)
+
+	// Demi Tails
+	var/tail_style = 0
+	if(character.tail_style)
+		tail_style = tail_styles_list.Find(character.tail_style.type)
+
+	// Demi Wings
+	var/wing_style = 0
+	if(character.wing_style)
+		wing_style = wing_styles_list.Find(character.wing_style.type)
+/*
+	// Technically custom_species is not part of the UI, but this place avoids merge problems.
+	src.custom_species = character.custom_species
+	if(istype(character.species,/datum/species/custom))
+		var/datum/species/custom/CS = character.species
+		src.species_traits = CS.traits.Copy()
+		src.base_species = CS.base_species
+		src.blood_color = CS.blood_color
+*/
+	// +1 to account for the none-of-the-above possibility
+	SetUIValueRange(DNA_UI_EAR_STYLE,	ear_style + 1,     ear_styles_list.len  + 1,  1)
+	SetUIValueRange(DNA_UI_TAIL_STYLE,	tail_style + 1,    tail_styles_list.len + 1,  1)
+	SetUIValueRange(DNA_UI_WING_STYLE,	wing_style + 1,    wing_styles_list.len + 1,  1)
+
+	SetUIValueRange(DNA_UI_TAIL_R,    character.r_tail,    255,    1)
+	SetUIValueRange(DNA_UI_TAIL_G,    character.g_tail,    255,    1)
+	SetUIValueRange(DNA_UI_TAIL_B,    character.b_tail,    255,    1)
+
+	SetUIValueRange(DNA_UI_TAIL2_R,   character.r_tail2,   255,    1)
+	SetUIValueRange(DNA_UI_TAIL2_G,   character.g_tail2,   255,    1)
+	SetUIValueRange(DNA_UI_TAIL2_B,   character.b_tail2,   255,    1)
+
+	SetUIValueRange(DNA_UI_WING_R,    character.r_wing,    255,    1)
+	SetUIValueRange(DNA_UI_WING_G,    character.g_wing,    255,    1)
+	SetUIValueRange(DNA_UI_WING_B,    character.b_wing,    255,    1)
+
+	SetUIValueRange(DNA_UI_EARS_R,    character.r_ears,    255,    1)
+	SetUIValueRange(DNA_UI_EARS_G,    character.g_ears,    255,    1)
+	SetUIValueRange(DNA_UI_EARS_B,    character.b_ears,    255,    1)
+
+	SetUIValueRange(DNA_UI_EARS2_R,   character.r_ears2,   255,    1)
+	SetUIValueRange(DNA_UI_EARS2_G,   character.g_ears2,   255,    1)
+	SetUIValueRange(DNA_UI_EARS2_B,   character.b_ears2,   255,    1)
+
+// MITHRAstation Edit End
 
 	SetUIValueRange(DNA_UI_HAIR_R,    character.r_hair,    255,    1)
 	SetUIValueRange(DNA_UI_HAIR_G,    character.g_hair,    255,    1)
