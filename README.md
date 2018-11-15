@@ -1,10 +1,17 @@
-# baystation12
+# MITHRAstation: The Bay port
+
+This is the repo for MITHRAstation's port to modern baycode.
+
+---
+## Baystation Info:
+
+### baystation12
 
 [Website](http://baystation12.net/) - [Code](http://github.com/Baystation12/Baystation12/) - [Discord](https://discord.gg/DrtRFxs) - [IRC](irc://irc.sorcery.net/#codershuttle)
 
 ---
 
-### LICENSE
+##### LICENSE
 The code for Baystation12 is licensed under the [GNU Affero General Public License v3](http://www.gnu.org/licenses/agpl.html), which can be found in full in LICENSE-AGPL3.txt.
 
 Code with a git authorship date prior to `1420675200 +0000` (2015/01/08 00:00) is licensed under the GNU General Public License version 3, which can be found in full in LICENSE-GPL3.txt.
@@ -24,7 +31,7 @@ See tgui/assets/fonts/SIL-OFL-1.1-LICENSE.md for the SIL Open Font License.
 
 All assets including icons and sound are under a [Creative Commons 3.0 BY-SA license](http://creativecommons.org/licenses/by-sa/3.0/) unless otherwise indicated.
 
-### GETTING THE CODE
+##### GETTING THE CODE
 The simplest way to obtain the code is using the github .zip feature.
 
 Click [here](https://github.com/Baystation12/Baystation12/archive/dev.zip) to get the latest code as a .zip file, then unzip it to wherever you want.
@@ -39,7 +46,7 @@ This will take a while to download, but it provides an easier method for updatin
 
 ---
 
-### INSTALLATION
+##### INSTALLATION
 
 First-time installation should be fairly straightforward.  First, you'll need BYOND installed.  You can get it from [here](http://www.byond.com/).
 
@@ -63,7 +70,7 @@ Finally, to start the server, run Dream Daemon and enter the path to your compil
 
 ---
 
-### UPDATING
+##### UPDATING
 
 To update an existing installation, first back up your /config and /data folders
 as these store your server configuration, player preferences and banlist.
@@ -80,13 +87,13 @@ When you have done this, you'll need to recompile the code, but then it should w
 
 ---
 
-### Configuration
+##### Configuration
 
 For a basic setup, simply copy every file from config/example to config.
 
 ---
 
-### SQL Setup
+##### SQL Setup
 
 The SQL backend for the library/stats and bans requires a MySQL server.  Your server details go in config/dbconfig.txt.
 
