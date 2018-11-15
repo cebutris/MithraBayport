@@ -137,8 +137,10 @@ Please contact me on #coderbus IRC. ~Carn x
 #define HO_HANDCUFF_LAYER   23
 #define HO_L_HAND_LAYER     24
 #define HO_R_HAND_LAYER     25
-#define HO_FIRE_LAYER       26 //If you're on fire
-#define TOTAL_LAYERS        26
+#define WING_LAYER			26		//MITHRAStation edit. Simply move this up a number if things are added.
+#define TAIL_LAYER_ALT		27	//MITHRAStation edit. Simply move this up a number if things are added.
+#define HO_FIRE_LAYER       28 //If you're on fire
+#define TOTAL_LAYERS        28	//MITHRA EDIT - KEEP THIS UPDATED
 //////////////////////////////////
 
 /mob/living/carbon/human
@@ -670,6 +672,18 @@ var/global/list/damage_icon_parts = list()
 
 /mob/living/carbon/human/proc/update_tail_showing(var/update_icons=1)
 	overlays_standing[HO_TAIL_LAYER] = null
+// MITHRAstation Edit - START
+	var/used_tail_layer = tail_alt ? TAIL_LAYER_ALT : HO_TAIL_LAYER
+
+	var/image/vr_tail_image = get_tail_image()
+	if(vr_tail_image)
+		vr_tail_image.layer = used_tail_layer
+		overlays_standing[HO_TAIL_LAYER] = vr_tail_image
+		animate_tail_reset(0)
+		if(update_icons)
+			queue_icon_update()
+			return
+// MITHRAStation Edit - END
 
 	var/species_tail = species.get_tail(src)
 
