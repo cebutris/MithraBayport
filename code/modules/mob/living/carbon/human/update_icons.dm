@@ -674,26 +674,24 @@ var/global/list/damage_icon_parts = list()
 	overlays_standing[HO_TAIL_LAYER] = null
 // MITHRAstation Edit - START
 	var/used_tail_layer = tail_alt ? TAIL_LAYER_ALT : HO_TAIL_LAYER
-
+	var/species_tail = species.get_tail(src)
 	var/image/vr_tail_image = get_tail_image()
+
 	if(vr_tail_image)
 		vr_tail_image.layer = used_tail_layer
 		overlays_standing[HO_TAIL_LAYER] = vr_tail_image
 		animate_tail_reset(0)
 		if(update_icons)
 			queue_icon_update()
-			return
-// MITHRAStation Edit - END
 
-	var/species_tail = species.get_tail(src)
-
-	if(species_tail && !(wear_suit && wear_suit.flags_inv & HIDETAIL))
+	else if(species_tail && !(wear_suit && wear_suit.flags_inv & HIDETAIL))
 		var/icon/tail_s = get_tail_icon()
 		overlays_standing[HO_TAIL_LAYER] = image(tail_s, icon_state = "[species_tail]_s")
 		animate_tail_reset(0)
+		if(update_icons)
+			queue_icon_update()
 
-	if(update_icons)
-		queue_icon_update()
+// MITHRAStation Edit - END
 
 /mob/living/carbon/human/proc/get_tail_icon()
 	var/icon_key = "[species.get_race_key(src)][r_skin][g_skin][b_skin][r_hair][g_hair][b_hair]"

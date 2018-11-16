@@ -61,6 +61,7 @@ var/list/organ_cache = list()
 		w_class = max(w_class + mob_size_difference(holder.mob_size, MOB_MEDIUM), 1) //smaller mobs have smaller organs.
 		if(!given_dna && holder.dna)
 			given_dna = holder.dna
+			species = holder.species //MITRHAstation Edit - For custom species
 		else
 			log_debug("[src] spawned in [holder] without a proper DNA.")
 

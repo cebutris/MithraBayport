@@ -1,6 +1,6 @@
 /**
  * Additional variables that must be defined on /mob/living/carbon/human
- * for use in code that is part of the vore modules.
+ * for use in code that is part of the genemod modules.
  *
  * These variables are declared here (separately from the normal human_defines.dm)
  * in order to isolate MITHRAstation changes and ease merging of other codebases.

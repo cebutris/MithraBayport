@@ -49,6 +49,8 @@
 		if(is_synth && species.cyborg_noun)
 			species_name += "[species.cyborg_noun] "
 		species_name += "[species.name]"
+		if(custom_species)						//MITHRAstation edit
+			species_name = "[custom_species]"	//MITHRAstation edit
 		msg += ", <b><font color='[species.get_flesh_colour(src)]'>\a [species_name]!</font></b>"
 	var/extra_species_text = species.get_additional_examine_text(src)
 	if(extra_species_text)
