@@ -1,6 +1,6 @@
 /datum/species/vulpkanin
-	name = "vulpkanin"
-	name_plural = "vulpkanin"
+	name = SPECIES_VULP
+	name_plural = SPECIES_VULP
 	icobase = 'modular_mithra/icons/mob/human_races/species/vulpkanin/body.dmi'
 	//deform = 'modular_mithra/icons/mob/human_races/species/vulpkanin/deformed_body.dmi' They don't have deformed icons. Hopefully this doesn't cause problems
 	husk_icon = 'modular_mithra/icons/mob/human_races/species/vulpkanin/husk.dmi'
