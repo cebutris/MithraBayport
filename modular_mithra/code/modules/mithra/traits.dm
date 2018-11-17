@@ -19,55 +19,5 @@
 	ASSERT(S)
 	return
 
-//Basic trimmed list because im too lazy to port all the snowflake stuff. Works because postive, neutral, and negative is autosorted based off their cost.
-
-
-/datum/trait/speed_fast
-	name = "Haste"
-	desc = "Allows you to move faster on average than baseline."
-	cost = 4
-	var_changes = list("slowdown" = -0.5)
-
-/datum/trait/endurance_high
-	name = "High Endurance"
-	desc = "Increases your maximum total hitpoints to 125"
-	cost = 4
-	var_changes = list("total_health" = 125)
-
-	apply(var/datum/species/S,var/mob/living/carbon/human/H)
-		..(S,H)
-		H.setMaxHealth(S.total_health)
-
-/datum/trait/darksight
-	name = "Darksight"
-	desc = "Allows you to see a short distance in the dark."
-	cost = 1
-	var_changes = list("darksight_range" = 3, "darksight_tint" = DARKTINT_MODERATE)
-
-/datum/trait/darksight_plus
-	name = "Darksight (Major)"
-	desc = "Allows you to see a longer distance in the dark."
-	cost = 2
-	var_changes = list("darksight_range" = 6, "darksight_tint" = DARKTINT_GOOD)
-/*
-/datum/trait/glowing_eyes
-	name = "Glowing Eyes"
-	desc = "Your eyes glow."	//MY VISION IS AUGMENTED
-	cost = 0
-	var_changes = list("glowing_eyes" = TRUE)
-*/
-/datum/trait/speed_slow
-	name = "Slowdown"
-	desc = "Allows you to move slower on average than baseline."
-	cost = -2
-	var_changes = list("slowdown" = 0.5)
-
-/datum/trait/endurance_low
-	name = "Low Endurance"
-	desc = "Reduces your maximum total hitpoints to 75."
-	cost = -2
-	var_changes = list("total_health" = 75)
-
-	apply(var/datum/species/S,var/mob/living/carbon/human/H)
-		..(S,H)
-		H.setMaxHealth(S.total_health)
+//	List of traits are located in traits_positve/negative/neutral. Note that there is no explicit flagging or categorization, as the traits are automagically defined as
+//	negative, positive, or neutral based off their cost.
