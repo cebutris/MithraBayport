@@ -1,6 +1,3 @@
-/* This is the beginning and the end. The rise and the fall.
-	Our gait will begin its saunter at the source, when the infant learns to crawl.*/
-
 /datum/species/akula
 	name = SPECIES_AKULA
 	name_plural = SPECIES_AKULA

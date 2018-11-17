@@ -1,11 +1,11 @@
 /datum/species/vulpkanin
 	name = "vulpkanin"
 	name_plural = "vulpkanin"
-	icobase = 'modular_mithra/icons/mob/human_races/species/akula/body.dmi'
-	deform = 'modular_mithra/icons/mob/human_races/species/akula/deformed_body.dmi'
-	husk_icon = 'modular_mithra/icons/mob/human_races/species/akula/husk.dmi'
-	preview_icon = 'modular_mithra/icons/mob/human_races/species/akula/preview.dmi'
-	tail = "aktail"
+	icobase = 'modular_mithra/icons/mob/human_races/species/vulpkanin/body.dmi'
+	//deform = 'modular_mithra/icons/mob/human_races/species/vulpkanin/deformed_body.dmi' They don't have deformed icons. Hopefully this doesn't cause problems
+	husk_icon = 'modular_mithra/icons/mob/human_races/species/vulpkanin/husk.dmi'
+	preview_icon = 'modular_mithra/icons/mob/human_races/species/vulpkanin/preview.dmi'
+	tail = "vulptail"
 	limb_blend = ICON_MULTIPLY
 	tail_blend = ICON_MULTIPLY
 	hidden_from_codex = FALSE
