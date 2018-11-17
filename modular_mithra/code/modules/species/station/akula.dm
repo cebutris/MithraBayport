@@ -13,7 +13,7 @@
 	tail_blend = ICON_MULTIPLY
 	hidden_from_codex = FALSE
 
-	unarmed_types = list(/datum/unarmed_attack/tail, /datum/unarmed_attack/punch, /datum/unarmed_attack/bite/sharp)
+	unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/kick,/datum/unarmed_attack/tail, /datum/unarmed_attack/punch, /datum/unarmed_attack/bite/sharp)
 
 	description = "Sharks! This is just a placeholder description!"
 
