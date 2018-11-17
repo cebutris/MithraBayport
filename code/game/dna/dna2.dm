@@ -103,12 +103,12 @@ var/global/list/datum/dna/gene/dna_genes[0]
 	var/b_type = "A+"  // Should probably change to an integer => string map but I'm lazy.
 	var/real_name          // Stores the real name of the person who originally got this dna datum. Used primarily for changelings,
 
-	// CUSTOM SPECIES
+	// MITHRAstation CUSTOM SPECIES
 	var/custom_species
 	var/base_species = "Human"
 	var/list/species_traits = list()
 	var/blood_color = "#A10808"
-	// CUSTOM SPECIES END
+	// MITHRAstation CUSTOM SPECIES END
 
 	// New stuff
 	var/species = SPECIES_HUMAN
@@ -125,6 +125,9 @@ var/global/list/datum/dna/gene/dna_genes[0]
 	new_dna.species=species
 	new_dna.body_markings=body_markings.Copy()
 	new_dna.s_base=s_base
+	new_dna.base_species=base_species //MITHRAstation Edit
+	new_dna.species_traits=species_traits.Copy() //MITHRAstation Edit
+	new_dna.blood_color=blood_color //MITHRAstation Edit
 	for(var/b=1;b<=DNA_SE_LENGTH;b++)
 		new_dna.SE[b]=SE[b]
 		if(b<=DNA_UI_LENGTH)
@@ -177,7 +180,7 @@ var/global/list/datum/dna/gene/dna_genes[0]
 	var/wing_style = 0
 	if(character.wing_style)
 		wing_style = wing_styles_list.Find(character.wing_style.type)
-/*
+
 	// Technically custom_species is not part of the UI, but this place avoids merge problems.
 	src.custom_species = character.custom_species
 	if(istype(character.species,/datum/species/custom))
@@ -185,7 +188,7 @@ var/global/list/datum/dna/gene/dna_genes[0]
 		src.species_traits = CS.traits.Copy()
 		src.base_species = CS.base_species
 		src.blood_color = CS.blood_color
-*/
+
 	// +1 to account for the none-of-the-above possibility
 	SetUIValueRange(DNA_UI_EAR_STYLE,	ear_style + 1,     ear_styles_list.len  + 1,  1)
 	SetUIValueRange(DNA_UI_TAIL_STYLE,	tail_style + 1,    tail_styles_list.len + 1,  1)
