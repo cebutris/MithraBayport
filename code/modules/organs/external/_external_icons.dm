@@ -78,7 +78,14 @@ var/list/limb_icon_cache = list()
 	if(species.base_skin_colours && !isnull(species.base_skin_colours[s_base]))
 		icon_state += species.base_skin_colours[s_base]
 
-	icon_cache_key = "[icon_name]_[species ? species.get_bodytype() : SPECIES_HUMAN]" //MITHRAstation Edit
+	//MITHRAstation edit - START
+
+	if(species.selects_bodytype)
+		icon_cache_key = "[icon_state]_[custom_species_override]"
+	else
+		icon_cache_key = "[icon_state]_[species ? species.name : SPECIES_HUMAN]"
+
+	//MITHRAstation edit - END
 
 	if(force_icon)
 		icon = force_icon
