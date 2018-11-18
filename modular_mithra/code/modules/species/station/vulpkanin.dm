@@ -9,7 +9,7 @@
 	tail = "vulptail"
 	limb_blend = ICON_MULTIPLY
 	tail_blend = ICON_MULTIPLY
-	default_ears = "vulpkanin, dual-color"
+	default_ears = /datum/sprite_accessory/ears/vulp
 	hidden_from_codex = FALSE
 
 	unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/kick, /datum/unarmed_attack/punch, /datum/unarmed_attack/bite/sharp, /datum/unarmed_attack/claws)
