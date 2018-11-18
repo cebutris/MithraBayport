@@ -5,6 +5,7 @@
 	//deform = 'modular_mithra/icons/mob/human_races/species/vulpkanin/deformed_body.dmi' They don't have deformed icons. Hopefully this doesn't cause problems
 	husk_icon = 'modular_mithra/icons/mob/human_races/species/vulpkanin/husk.dmi'
 	preview_icon = 'modular_mithra/icons/mob/human_races/species/vulpkanin/preview.dmi'
+	modular_tail = 'modular_mithra/icons/mob/human_races/species/vulpkanin/tail.dmi'
 	tail = "vulptail"
 	limb_blend = ICON_MULTIPLY
 	tail_blend = ICON_MULTIPLY
