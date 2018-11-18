@@ -1,6 +1,6 @@
 /datum/species/vasilissan
-	name = "Vasilissan"
-	name_plural = "Vasilissan"
+	name = SPECIES_VASS
+	name_plural = "Vasilissans"
 	icobase = 'modular_mithra/icons/mob/human_races/species/vasilissan/body.dmi'
 	deform = 'modular_mithra/icons/mob/human_races/species/vasilissan/deformed_body.dmi'
 	husk_icon = 'modular_mithra/icons/mob/human_races/species/vasilissan/husk.dmi'
