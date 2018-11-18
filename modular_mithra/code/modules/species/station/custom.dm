@@ -6,6 +6,7 @@
 	var/base_species = null // Unused outside of certain stuff
 	var/selects_bodytype = FALSE // Allows the species to choose from body types intead of being forced to be just one.
 	var/modular_tail
+	var/default_ears
 
 /mob/living/carbon/human/proc/get_display_species()
 

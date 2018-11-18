@@ -382,7 +382,14 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 			pref.s_tone = 0
 			pref.age = max(min(pref.age, mob_species.max_age), mob_species.min_age)
 
-			pref.custom_species = null //MITHRAstation Edit - This is cleared on species changes
+		//MITHRA STATION EDITS - START
+			var/datum/species/HALP = all_species[pref.species]
+			pref.custom_species = null //This is cleared on species changes
+			if(!pref.ear_style)	//if no custom ear selected...
+				pref.ear_style = HALP.default_ears	//use species' default ear
+
+		//MITHRA STATION EDITS - END
+
 			reset_limbs() // Safety for species with incompatible manufacturers; easier than trying to do it case by case.
 			pref.body_markings.Cut() // Basically same as above.
 
