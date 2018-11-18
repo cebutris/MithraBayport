@@ -53,3 +53,21 @@
 	..(S,H)
 	for(var/obj/item/organ/external/O in H.organs)
 		O.min_broken_damage *= 0.5
+
+/datum/trait/oxy_weak
+	name = "Haemoglobin Improbus"
+	desc = "You have a lower blood-oxygen saturation, meaning asphyxiation is a greater risk to you."
+	cost = -1
+	var_changes = list("oxy_mod" = 1.25)
+
+/datum/trait/toxin_weak
+	name = "Paper Liver"
+	desc = "Your metabolism isn't very good at processing toxins, making poisons more effective against you."
+	cost = -1
+	var_changes = list("toxins_mod" = 1.15)
+
+/datum/trait/noodlyarms
+	name = "Muscular Atrophy"
+	desc = "You have less muscle mass than normal, giving you inferior strength."
+	cost = -1
+	var_changes = list("strength" = STR_LOW)
