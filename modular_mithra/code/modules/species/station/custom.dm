@@ -34,7 +34,7 @@
 
 	var/list/traits = list()
 
-	available_cultural_info = list( //I can do ANYTHING! Placeholder until the loreboys come and figure out what Akula do
+	available_cultural_info = list( //I can do ANYTHING! As a custom species, you can come from pretty much wherever you want!
 		TAG_CULTURE = list(
 			CULTURE_HUMAN,
 			CULTURE_HUMAN_VATGROWN,
