@@ -5,6 +5,7 @@
 	deform = 'modular_mithra/icons/mob/human_races/species/akula/deformed_body.dmi'
 	husk_icon = 'modular_mithra/icons/mob/human_races/species/akula/husk.dmi'
 	preview_icon = 'modular_mithra/icons/mob/human_races/species/akula/preview.dmi'
+	modular_tail = 'modular_mithra/icons/mob/human_races/species/akula/tail.dmi'
 	tail = "aktail"
 	limb_blend = ICON_MULTIPLY
 	tail_blend = ICON_MULTIPLY
