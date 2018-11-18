@@ -63,4 +63,22 @@
 	name = "Phototransductive Praesidium"
 	desc = "Your eyes are slightly more resillient against bright lights."
 	cost = 1
-	var_changes = list("flash_mod" = 0.75)
+	var_changes = list("flash_mod" = 0.85)
+
+/datum/trait/oxy_resist
+	name = "Haemoglobin Melior"
+	desc = "You can last a bit longer while aphyxiating due to higher blood-oxygen saturation."
+	cost = 1
+	var_changes = list("oxy_mod" = 0.75)
+
+/datum/trait/toxin_resist
+	name = "Iron Liver"
+	desc = "Your metabolism processes toxins more efficiently, making you slightly more resistant to poisonings."
+	cost = 1
+	var_changes = list("toxins_mod" = 0.85)
+
+/datum/trait/mussel
+	name = "Muscular Hypertrophy"
+	desc = "You have higher muscle mass than normal, giving you greater strength."
+	cost = 1
+	var_changes = list("strength" = STR_HIGH)
