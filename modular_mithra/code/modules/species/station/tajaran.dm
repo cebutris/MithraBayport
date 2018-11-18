@@ -1,5 +1,5 @@
 /datum/species/tajaran
-	name = "Tajaran"
+	name = SPECIES_TAJ
 	name_plural = "Tajara"
 	icobase = 'modular_mithra/icons/mob/human_races/species/tajaran/body.dmi'
 	deform = 'modular_mithra/icons/mob/human_races/species/tajaran/deformed_body.dmi'
