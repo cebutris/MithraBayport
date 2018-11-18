@@ -699,7 +699,12 @@ var/global/list/damage_icon_parts = list()
 	if(!tail_icon)
 		//generate a new one
 		var/species_tail_anim = species.get_tail_animation(src)
-		if(!species_tail_anim) species_tail_anim = 'icons/effects/species.dmi'
+////////// MITHRAstation edit -start- Modular species tail memes
+		if(species.modular_tail)
+			species_tail_anim = species.modular_tail
+		else if(!species_tail_anim)
+			species_tail_anim = 'icons/effects/species.dmi'
+////////// MITHRAstation edit -end-
 		tail_icon = new/icon(species_tail_anim)
 		tail_icon.Blend(rgb(r_skin, g_skin, b_skin), species.tail_blend)
 		// The following will not work with animated tails.

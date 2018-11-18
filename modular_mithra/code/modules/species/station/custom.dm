@@ -5,6 +5,7 @@
 /datum/species
 	var/base_species = null // Unused outside of certain stuff
 	var/selects_bodytype = FALSE // Allows the species to choose from body types intead of being forced to be just one.
+	var/modular_tail
 
 /mob/living/carbon/human/proc/get_display_species()
 
@@ -89,6 +90,7 @@
 	new_copy.deform = to_copy.deform
 	new_copy.tail = to_copy.tail
 	new_copy.tail_animation = to_copy.tail_animation
+	new_copy.modular_tail = to_copy.modular_tail
 	new_copy.tail_hair = to_copy.tail_hair
 	new_copy.limb_blend = to_copy.limb_blend
 	new_copy.tail_blend = to_copy.tail_blend
