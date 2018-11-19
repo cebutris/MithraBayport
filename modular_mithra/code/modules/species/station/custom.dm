@@ -74,6 +74,13 @@
 	var/datum/species/real = all_species[base_species]
 	return real.race_key
 
+/datum/species/custom/post_organ_rejuvenate(var/obj/item/organ/org, var/mob/living/carbon/human/H)	//This is required so custom species do not revert to humans on rejuvenate.
+	var/obj/item/organ/external/E = org
+	if(H && istype(E))
+		E.custom_species_override = H.species.base_species
+		E.species = H.species
+		E.force_icon = H.species.get_icobase()
+
 /datum/species/custom/proc/produceCopy(var/datum/species/to_copy,var/list/traits,var/mob/living/carbon/human/H)
 	ASSERT(to_copy)
 	ASSERT(istype(H))
