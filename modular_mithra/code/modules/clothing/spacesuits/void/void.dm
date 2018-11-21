@@ -3,7 +3,7 @@
 
 //This override is to allow our snowflake species to use voidsuits. Keep this updated with whatever new species you add.
 /obj/item/clothing/head/helmet/space/void/Initialize()
-	..()
+	. = ..()
 	sprite_sheets |= list(
 		SPECIES_AKULA = 'icons/mob/onmob/head.dmi',
 		SPECIES_VULP = 'icons/mob/onmob/head.dmi',
@@ -18,7 +18,7 @@
 		)
 
 /obj/item/clothing/suit/space/void/Initialize()
-	..()
+	. = ..()
 	sprite_sheets = list(
 		SPECIES_AKULA = 'icons/mob/onmob/suit.dmi',
 		SPECIES_VULP = 'icons/mob/onmob/suit.dmi',

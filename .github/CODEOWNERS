@@ -9,4 +9,5 @@ code/modules/mob/living/carbon/human/examine.dm @Michiyamenotehifunana
 code/modules/organs/external/_external_icons.dm @Michiyamenotehifunana
 code/modules/organs/external/head.dm @Michiyamenotehifunana
 code/modules/organs/organ.dm @Michiyamenotehifunana
-code/modules/client\preference_setup\02_body.dm @Michiyamenotehifunana
+code/modules/client/preference_setup/02_body.dm @Michiyamenotehifunana
+code/game/gamemodes/changeling/changeling_powers.dm	@Michiyamenotehifunana

@@ -81,7 +81,7 @@ var/global/list/possible_changeling_IDs = list("Alpha","Beta","Gamma","Delta","E
 
 	var/mob/living/carbon/human/H = src
 	if(istype(H))
-		var/datum/absorbed_dna/newDNA = new(H.real_name, H.dna, H.species.name, H.languages)
+		var/datum/absorbed_dna/newDNA = new(H.real_name, H.dna, H.species.get_bodytype(), H.languages)	//MITHRAstation EDIT - Fixes Custom Species interactions with lings
 		absorbDNA(newDNA)
 
 	return 1
@@ -208,7 +208,7 @@ var/global/list/possible_changeling_IDs = list("Alpha","Beta","Gamma","Delta","E
 
 	changeling_update_languages(changeling.absorbed_languages)
 
-	var/datum/absorbed_dna/newDNA = new(T.real_name, T.dna, T.species.name, T.languages)
+	var/datum/absorbed_dna/newDNA = new(T.real_name, T.dna, T.species.get_bodytype(), T.languages) //MITHRAstation EDIT - Fixes Custom Species interactions with lings
 	absorbDNA(newDNA)
 	if(mind && T.mind)
 		mind.store_memory("[T.real_name]'s memories:")
@@ -815,7 +815,7 @@ var/list/datum/absorbed_dna/hivemind_bank = list()
 		to_chat(src, "<span class='notice'>That species must be absorbed directly.</span>")
 		return
 
-	var/datum/absorbed_dna/newDNA = new(T.real_name, T.dna, T.species.name, T.languages)
+	var/datum/absorbed_dna/newDNA = new(T.real_name, T.dna, T.species.get_bodytype(), T.languages)	//MITHRAstation EDIT - Fixes Custom Species interactions with lings
 	absorbDNA(newDNA)
 
 	feedback_add_details("changeling_powers","ED")
