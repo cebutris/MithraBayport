@@ -21,8 +21,8 @@
 	unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/kick, /datum/unarmed_attack/punch, /datum/unarmed_attack/bite)
 
 	description = "This is a custom species where you can assign various species traits to them as you wish, to \
-	create a (hopefully) balanced species. You will see the options to customize them on the VORE tab once \
-	you select and set this species as your species. Please look at the VORE tab if you select this species."
+	create a (hopefully) balanced species. You will see the options to customize them on the Genemods tab once \
+	you select and set this species as your species. Please look at the Genemods tab if you select this species."
 
 	min_age = 18
 	max_age = 200
