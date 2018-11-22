@@ -15,7 +15,17 @@ var/global/list/wing_icon_cache = list()
 */
 
 /mob/living/carbon/human/proc/get_tail_image()
+	//If you are FBP with tail style and didn't set a custom one
+	var/datum/robolimb/model = isSynthetic()
+	var/obj/item/organ/external/T = organs_by_name[BP_CHEST]
+	if(T && BP_IS_ROBOTIC(T))
+		var/datum/robolimb/R = all_robolimbs[T.model]
+		if(istype(model) && model.includes_tail && !tail_style)
+			var/icon/tail_s = new/icon("icon" = R.icon, "icon_state" = "tail")
+			tail_s.Blend(rgb(src.r_skin, src.g_skin, src.b_skin), species.tail_blend ? ICON_MULTIPLY : ICON_ADD)
+			return image(tail_s)
 
+	//If you have a custom tail selected
 	if(tail_style && !(wear_suit && wear_suit.flags_inv & HIDETAIL))
 		var/icon/tail_s = new/icon("icon" = tail_style.icon, "icon_state" = tail_style.ani_state ? tail_style.ani_state : tail_style.icon_state)
 		if(tail_style.do_colouration)

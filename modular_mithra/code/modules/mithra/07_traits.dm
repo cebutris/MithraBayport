@@ -95,10 +95,11 @@ datum/preferences/copy_to(mob/living/carbon/human/character, is_preview_copy = F
 		//Any additional non-trait settings can be applied here
 		new_CS.blood_color = blood_color
 
-	for(var/obj/item/organ/external/E in character.organs)
-		E.custom_species_override = character.species.base_species
-		E.species = character.species
-		E.force_icon = character.species.get_icobase()
+	for(var/obj/item/organ/external/E in character.organs)	//Forces the base species stuff onto the limbs
+		E.custom_species_override = character.species.base_species	//Kludge to make the icon cache key proper
+		E.species = character.species	//Secondary kludge
+		if(!BP_IS_ROBOTIC(E))	//Check if the limb is robotic
+			E.force_icon = character.species.get_icobase()	//If not, force the species limb icons onto the limb because update_icons won't actually use the icon cache key stuff
 
 	character.force_update_limbs()
 	character.update_sight()
