@@ -25,7 +25,8 @@
 	var/list/possible_features = list(
 									/datum/map_template/ruin/exoplanet/monolith,
 									/datum/map_template/ruin/exoplanet/hydrobase,
-									/datum/map_template/ruin/exoplanet/crashed_pod)
+									/datum/map_template/ruin/exoplanet/crashed_pod,
+									/datum/map_template/ruin/exoplanet/hut)
 
 /obj/effect/overmap/sector/exoplanet/New(nloc, max_x, max_y)
 	if(!GLOB.using_map.use_overmap)
@@ -70,8 +71,8 @@
 
 //Not that it should ever get deleted but just in case
 /obj/effect/overmap/sector/exoplanet/Destroy()
-		. = ..()
-		STOP_PROCESSING(SSobj, src)
+	. = ..()
+	STOP_PROCESSING(SSobj, src)
 
 /obj/effect/overmap/sector/exoplanet/Process()
 	if(animals.len < 0.5*max_animal_count && !repopulating)

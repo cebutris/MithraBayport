@@ -5,22 +5,14 @@
  *
  * Contains:
  *		Egg Box
- *		Candle Box
  *		Crayon Box
  *		Cigarette Box
  */
 
 /obj/item/weapon/storage/fancy
 	item_state = "syringe_kit" //placeholder, many of these don't have inhands
+	opened = 0 //if an item has been removed from this container
 	var/obj/item/key_type //path of the key item that this "fancy" container is meant to store
-	var/opened = 0 //if an item has been removed from this container
-
-/obj/item/weapon/storage/fancy/remove_from_storage()
-	. = ..()
-	if(!opened && .)
-		opened = 1
-		update_icon()
-
 
 /obj/item/weapon/storage/fancy/on_update_icon()
 	if(!opened)
@@ -63,25 +55,20 @@
 /obj/item/weapon/storage/fancy/egg_box/empty
 	startswith = null
 
-
 /*
- * Candle Box
+ * Cracker Packet
  */
 
-/obj/item/weapon/storage/fancy/candle_box
-	name = "candle pack"
-	desc = "A pack of red candles."
-	icon = 'icons/obj/candle.dmi'
-	icon_state = "candlebox"
-	opened = 1 //no closed state
-	throwforce = 2
-	w_class = ITEM_SIZE_SMALL
+/obj/item/weapon/storage/fancy/crackers
+	name = "\improper Getmore Crackers"
+	icon = 'icons/obj/food.dmi'
+	icon_state = "crackerbag"
+	storage_slots = 6
 	max_w_class = ITEM_SIZE_TINY
-	max_storage_space = 5
-	slot_flags = SLOT_BELT
-
-	key_type = /obj/item/weapon/flame/candle
-	startswith = list(/obj/item/weapon/flame/candle = 5)
+	w_class = ITEM_SIZE_SMALL
+	key_type = /obj/item/weapon/reagent_containers/food/snacks/cracker
+	can_hold = list(/obj/item/weapon/reagent_containers/food/snacks/cracker)
+	startswith = list(/obj/item/weapon/reagent_containers/food/snacks/cracker = 6)
 
 /*
  * Crayon Box

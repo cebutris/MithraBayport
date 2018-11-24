@@ -19,6 +19,11 @@
 	desc = "A fashionable tunic that NanoTrasen provides to their lab workers."
 	icon_state = "tunic_nt"
 
+/obj/item/clothing/accessory/tunic/heph
+	name = "\improper Hephaestus Industries tunic"
+	desc = "A fashionable tunic that Hephaestus Industries provides to their lab workers."
+	icon_state = "tunic_heph"
+
 /obj/item/clothing/accessory/tunic/exec
 	name = "executive tunic"
 	icon_state = "tunicblack"
@@ -27,6 +32,11 @@
 	name = "\improper NanoTrasen executive tunic"
 	desc = "A fashionable tunic that NanoTrasen provides to their lab workers."
 	icon_state = "tunicblack_nt"
+
+/obj/item/clothing/accessory/tunic/exec/heph
+	name = "\improper Hephaestus Industries executive tunic"
+	desc = "A fashionable tunic that Hephaestus Industries provides to their lab workers."
+	icon_state = "tunicblack_heph"
 
 /obj/item/clothing/accessory/dashiki
 	name = "black dashiki"
@@ -120,10 +130,10 @@
 /obj/item/clothing/accessory/toggleable/proc/do_toggle(user)
 	if(icon_state == icon_closed)
 		icon_state = "[icon_closed]_open"
-		to_chat(usr, "You unbutton [src].")
+		to_chat(user, "You unbutton [src].")
 	else
 		icon_state = icon_closed
-		to_chat(usr, "You button up [src].")
+		to_chat(user, "You button up [src].")
 
 	update_clothing_icon()	//so our overlays update
 
@@ -163,7 +173,7 @@
 
 /obj/item/clothing/accessory/toggleable/corpjacket
 	name = "corporate suit jacket"
-	desc = "A jacket that companies have their executives wear."
+	desc = "A jacket that the EXO has their executives wear."
 	icon_state = "jacket_tl"
 
 /obj/item/clothing/accessory/toggleable/corpjacket/nanotrasen
@@ -171,11 +181,16 @@
 	desc = "A jacket that NanoTrasen has their executives wear."
 	icon_state = "jacket_nt"
 
+/obj/item/clothing/accessory/toggleable/corpjacket/heph
+	name = "\improper Hephaestus Industries suit jacket"
+	desc = "A jacket that Hephaestus Industries has their executives wear."
+	icon_state = "jacket_heph"
+
 /obj/item/clothing/accessory/toggleable/hawaii
 	name = "flower-pattern shirt"
 	desc = "You probably need some welder googles to look at this."
 	icon_state = "hawaii"
-	sprite_sheets = list("Monkey" = 'icons/mob/species/monkey/ties.dmi')
+	sprite_sheets = list("Monkey" = 'icons/mob/species/monkey/onmob_accessories_monkey.dmi')
 
 /obj/item/clothing/accessory/toggleable/hawaii/red
 	icon_state = "hawaii2"
@@ -217,10 +232,10 @@
 /obj/item/clothing/accessory/toggleable/flannel/do_toggle(user)
 	if(buttoned == 0)
 		buttoned = 1
-		to_chat(usr, "You button your [src].")
+		to_chat(user, "You button your [src].")
 	else
 		buttoned = 0
-		to_chat(usr, "You unbutton [src].")
+		to_chat(user, "You unbutton [src].")
 	update_icon()
 
 /obj/item/clothing/accessory/toggleable/flannel/verb/roll_up_sleeves()
