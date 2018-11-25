@@ -2922,6 +2922,7 @@
 #include "modular_mithra\code\__defines\mobs.dm"
 #include "modular_mithra\code\datums\mutable_appearance.dm"
 #include "modular_mithra\code\game\machinery\suit_storage_unit.dm"
+#include "modular_mithra\code\game\mecha\mecha_actions.dm"
 #include "modular_mithra\code\modules\client\preference_setup\loadout\geartweaks.dm"
 #include "modular_mithra\code\modules\client\preference_setup\loadout\lists\clothing.dm"
 #include "modular_mithra\code\modules\clothing\polychrome.dm"
