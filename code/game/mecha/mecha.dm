@@ -81,6 +81,8 @@
 	var/max_equip = 3
 	var/datum/events/events
 
+	var/strafe = FALSE	//MITHRAstation edit - if we're strafing
+
 /obj/mecha/drain_power(var/drain_check)
 
 	if(drain_check)
@@ -379,7 +381,7 @@
 	var/move_result = 0
 	if(hasInternalDamage(MECHA_INT_CONTROL_LOST))
 		move_result = mechsteprand()
-	else if(src.dir!=direction)
+	else if(src.dir!=direction && !strafe)	//MITHRAstation edit - the main magic in strafecode
 		move_result = mechturn(direction)
 	else
 		move_result	= mechstep(direction)
@@ -403,7 +405,10 @@
 	return 1
 
 /obj/mecha/proc/mechstep(direction)
+	var/current_dir = dir	//MITHRAstation edit - strafecode
 	var/result = step(src,direction)
+	if(strafe)				//MITHRAstation edit - strafecode
+		set_dir(current_dir)	//MITHRAstation edit - strafecode
 	if(result)
 		playsound(src,'sound/mecha/mechstep.ogg',40,1)
 	return result

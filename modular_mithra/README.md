@@ -23,3 +23,4 @@ If for whatever reason you are unable to maintain modularity and have to modify 
   - `code/modules/organs/organ.dm`
   - `code/modules/client\preference_setup\02_body.dm`
   - `code/game/gamemodes/changeling/changeling_powers.dm`
+  - `code/game/mecha/mecha.dm`
