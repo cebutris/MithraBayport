@@ -135,4 +135,12 @@
 /obj/item/clothing/gloves/rig/command
 	species_restricted = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_UNATHI,SPECIES_AKULA,SPECIES_VULP,SPECIES_VASS,SPECIES_TAJ)
 
+//////////////////NULL//////////////////////////
+
+/obj/item/clothing/head/helmet/space/rig/zero
+	species_restricted = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_UNATHI,SPECIES_AKULA,SPECIES_VULP,SPECIES_VASS,SPECIES_TAJ)
+
+/obj/item/clothing/suit/space/rig/zero
+	species_restricted = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_UNATHI,SPECIES_AKULA,SPECIES_VULP,SPECIES_VASS,SPECIES_TAJ)
+
 //The antag hardsuits are not species locked
