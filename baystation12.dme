@@ -2948,6 +2948,7 @@
 #include "modular_mithra\code\modules\organs\robolimbs.dm"
 #include "modular_mithra\code\modules\species\station\akula.dm"
 #include "modular_mithra\code\modules\species\station\custom.dm"
+#include "modular_mithra\code\modules\species\station\station.dm"
 #include "modular_mithra\code\modules\species\station\tajaran.dm"
 #include "modular_mithra\code\modules\species\station\vasilissan.dm"
 #include "modular_mithra\code\modules\species\station\vulpkanin.dm"
