@@ -2949,6 +2949,8 @@
 #include "modular_mithra\code\modules\mithra\traits_neutral.dm"
 #include "modular_mithra\code\modules\mithra\traits_positive.dm"
 #include "modular_mithra\code\modules\mithra\update_icons_vr.dm"
+#include "modular_mithra\code\modules\mob\animations.dm"
+#include "modular_mithra\code\modules\mob\inventory.dm"
 #include "modular_mithra\code\modules\organs\robolimbs.dm"
 #include "modular_mithra\code\modules\species\station\akula.dm"
 #include "modular_mithra\code\modules\species\station\custom.dm"
