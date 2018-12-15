@@ -3,7 +3,7 @@
 	description = "A medal or ribbon awarded to SolGov personnel for significant accomplishments."
 	path = /obj/item/clothing/accessory
 	cost = 8
-	allowed_branches = SOLGOV_BRANCHES
+	//allowed_branches = SOLGOV_BRANCHES
 
 /datum/gear/accessory/solawardmajor/New()
 	..()
@@ -23,7 +23,7 @@
 	description = "A medal or ribbon awarded to SolGov personnel for minor accomplishments."
 	path = /obj/item/clothing/accessory
 	cost = 5
-	allowed_branches = SOLGOV_BRANCHES
+	//allowed_branches = SOLGOV_BRANCHES
 
 /datum/gear/accessory/solawardminor/New()
 	..()
@@ -43,7 +43,7 @@
 	path = /obj/item/clothing/accessory/solgov/ec_patch
 	description = "A shoulder patch representing the Expeditionary Corps."
 	flags = GEAR_HAS_TYPE_SELECTION
-	allowed_branches = list(/datum/mil_branch/expeditionary_corps)
+	//allowed_branches = list(/datum/mil_branch/expeditionary_corps)
 
 /datum/gear/accessory/torch_patch
 	display_name = "Torch mission patch"
@@ -59,7 +59,7 @@
 	display_name = "fleet patch"
 	path = /obj/item/clothing/accessory/solgov/fleet_patch
 	flags = GEAR_HAS_TYPE_SELECTION
-	allowed_branches = list(/datum/mil_branch/fleet)
+	//allowed_branches = list(/datum/mil_branch/fleet)
 
 /datum/gear/accessory/armband_ma
 	display_name = "master at arms brassard"
@@ -90,16 +90,16 @@
 	allowed_roles = list(/datum/job/rd, /datum/job/scientist, /datum/job/scientist_assistant, /datum/job/assistant)
 
 /datum/gear/accessory/armband_nt
-	allowed_branches = CIVILIAN_BRANCHES
+	//allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/accessory/ntaward
-	allowed_branches = CIVILIAN_BRANCHES
+	//allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/accessory/tie
-	allowed_branches = CIVILIAN_BRANCHES
+	//allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/accessory/tie_color
-	allowed_branches = CIVILIAN_BRANCHES
+	//allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/accessory/stethoscope
 	allowed_roles = STERILE_ROLES
@@ -140,21 +140,21 @@
 
 /datum/gear/clothing/hawaii
 	allowed_roles = SEMIFORMAL_ROLES
-	allowed_branches = CIVILIAN_BRANCHES
+	//allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/clothing/scarf
 	allowed_roles = SEMIANDFORMAL_ROLES
 
 /datum/gear/clothing/flannel
 	allowed_roles = SEMIFORMAL_ROLES
-	allowed_branches = CIVILIAN_BRANCHES
+	//allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/clothing/vest
 	allowed_roles = FORMAL_ROLES
-	allowed_branches = CIVILIAN_BRANCHES
+	//allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/clothing/suspenders
-	allowed_branches = CIVILIAN_BRANCHES
+	//allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/clothing/wcoat
 	allowed_roles = FORMAL_ROLES
@@ -163,28 +163,28 @@
 	allowed_roles = FORMAL_ROLES
 
 /datum/gear/clothing/dashiki
-	allowed_branches = CIVILIAN_BRANCHES
+	//allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/clothing/thawb
-	allowed_branches = CIVILIAN_BRANCHES
+	//allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/clothing/sherwani
 	allowed_roles = FORMAL_ROLES
 
 /datum/gear/clothing/qipao
-	allowed_branches = CIVILIAN_BRANCHES
+	//allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/clothing/sweater
-	allowed_branches = CIVILIAN_BRANCHES
+	//allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/clothing/tangzhuang
-	allowed_branches = CIVILIAN_BRANCHES
+	//allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/accessory/bowtie
-	allowed_branches = CIVILIAN_BRANCHES
+	//allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/accessory/ftupin
-	allowed_branches = CIVILIAN_BRANCHES
+	//allowed_branches = CIVILIAN_BRANCHES
 
 /*********************
  tactical accessories
@@ -193,17 +193,17 @@
 	display_name = "black UBAC shirt"
 	path = /obj/item/clothing/accessory/ubac
 	allowed_roles = ARMORED_ROLES
-	allowed_branches = list(/datum/mil_branch/expeditionary_corps, /datum/mil_branch/civilian)
+	//allowed_branches = list(/datum/mil_branch/expeditionary_corps, /datum/mil_branch/civilian)
 
 /datum/gear/tactical/ubac/blue
 	display_name = "navy blue UBAC shirt"
 	path = /obj/item/clothing/accessory/ubac/blue
-	allowed_branches = list(/datum/mil_branch/fleet)
+	//allowed_branches = list(/datum/mil_branch/fleet)
 
 /datum/gear/tactical/ubac/misc
 	display_name = "miscellaneous UBAC shirt selection"
 	path = /obj/item/clothing/accessory/ubac
-	allowed_branches = CIVILIAN_BRANCHES
+	//allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/tactical/ubac/misc/New()
 	..()
@@ -221,12 +221,12 @@
 /datum/gear/tactical/armor_pouches/navy
 	display_name = "navy armor pouches"
 	path = /obj/item/clothing/accessory/storage/pouches/navy
-	allowed_branches = list(/datum/mil_branch/fleet, /datum/mil_branch/civilian)
+	//allowed_branches = list(/datum/mil_branch/fleet, /datum/mil_branch/civilian)
 
 /datum/gear/tactical/armor_pouches/misc
 	display_name = "miscellaneous armor pouches selection"
 	path = /obj/item/clothing/accessory/storage/pouches
-	allowed_branches = CIVILIAN_BRANCHES
+	//allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/tactical/armor_pouches/misc/New()
 	..()
@@ -244,12 +244,12 @@
 /datum/gear/tactical/large_pouches/navy
 	display_name = "navy large armor pouches"
 	path = /obj/item/clothing/accessory/storage/pouches/large/navy
-	allowed_branches = list(/datum/mil_branch/fleet, /datum/mil_branch/civilian)
+	//allowed_branches = list(/datum/mil_branch/fleet, /datum/mil_branch/civilian)
 
 /datum/gear/tactical/large_pouches/misc
 	display_name = "miscellaneous large armor pouches selection"
 	path = /obj/item/clothing/accessory/storage/pouches
-	allowed_branches = CIVILIAN_BRANCHES
+	//allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/tactical/large_pouches/misc/New()
 	..()
