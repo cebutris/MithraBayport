@@ -55,6 +55,8 @@
 	var/attempting = 0 //One clone attempt at a time thanks
 	var/eject_wait = 0 //Don't eject them as soon as they are created fuckkk
 	var/biomass = CLONE_BIOMASS * 3
+	active_power_usage = 5000
+	idle_power_usage = 500
 
 /obj/machinery/clonepod/New()
 	set_extension(src, /datum/extension/interactive/multitool, /datum/extension/interactive/multitool/store)
@@ -186,6 +188,7 @@
 		if(occupant)
 			locked = 0
 			go_out()
+		update_use_power(POWER_USE_OFF)
 		return
 
 	if((occupant) && (occupant.loc == src))
@@ -193,6 +196,7 @@
 			locked = 0
 			go_out()
 			connected_message("Clone Rejected: Deceased.")
+			update_use_power(POWER_USE_IDLE)
 			return
 
 		if(GetCloneReadiness() >= 100 && !eject_wait)
@@ -201,6 +205,7 @@
 			connected_message("Cloning Process Complete.")
 			locked = 0
 			go_out()
+			update_use_power(POWER_USE_IDLE)
 			return
 
 		occupant.Paralyse(4)
@@ -218,13 +223,14 @@
 		//Also heal some oxyloss ourselves because inaprovaline is so bad at preventing it!!
 		occupant.adjustOxyLoss(-4)
 
-		use_power(7500) //This might need tweaking.
+		update_use_power(POWER_USE_ACTIVE)
 		return
 
 	else if((!occupant) || (occupant.loc != src))
 		occupant = null
 		if(locked)
 			locked = 0
+		update_use_power(POWER_USE_IDLE)
 		return
 
 	return

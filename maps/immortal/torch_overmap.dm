@@ -1,5 +1,5 @@
 /obj/effect/overmap/ship/torch
-	name = "NDV Immortal"
+	name = "SEV Torch"
 	fore_dir = WEST
 	vessel_mass = 40000
 	start_x = 4
@@ -55,6 +55,14 @@
 	max_speed = 1/(2 SECONDS)
 	burn_delay = 0.5 SECONDS //spammable, but expensive
 	fore_dir = NORTH
+
+/obj/effect/overmap/ship/landable/guppy
+	name = "Guppy"
+	shuttle = "Guppy"
+	max_speed = 1/(10 SECONDS)
+	burn_delay = 2 SECONDS
+	vessel_mass = 2000
+	fore_dir = SOUTH
 
 /obj/machinery/computer/shuttle_control/explore/aquila
 	name = "aquila control console"
