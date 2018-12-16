@@ -55,7 +55,7 @@
 	var/attempting = 0 //One clone attempt at a time thanks
 	var/eject_wait = 0 //Don't eject them as soon as they are created fuckkk
 	var/biomass = CLONE_BIOMASS * 3
-	active_power_usage = 5000
+	active_power_usage = 2000
 	idle_power_usage = 500
 
 /obj/machinery/clonepod/New()
