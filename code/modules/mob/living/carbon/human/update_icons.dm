@@ -371,6 +371,7 @@ var/global/list/damage_icon_parts = list()
 
 	//tail
 	update_tail_showing(0)
+	update_wing_showing() // MITHRAstation edit
 
 	if(update_icons)
 		queue_icon_update()
@@ -594,9 +595,11 @@ var/global/list/damage_icon_parts = list()
 	if(wear_suit)
 		overlays_standing[HO_SUIT_LAYER]	= wear_suit.get_mob_overlay(src,slot_wear_suit_str)
 		update_tail_showing(0)
+		update_wing_showing()	//MITHRAstation edit
 	else
 		overlays_standing[HO_SUIT_LAYER]	= null
 		update_tail_showing(0)
+		update_wing_showing()	//MITHRAstation edit
 		update_inv_w_uniform(0)
 		update_inv_shoes(0)
 		update_inv_gloves(0)
@@ -772,6 +775,16 @@ var/global/list/damage_icon_parts = list()
 	if(update_icons)
 		queue_icon_update()
 
+//MITHRAstation edit START - Wings
+/mob/living/carbon/human/proc/update_wing_showing()
+	if(QDESTROYING(src))
+		return
+
+	var/image/vr_wing_image = get_wing_image()
+	if(vr_wing_image)
+		vr_wing_image.layer = WING_LAYER
+		overlays_standing[WING_LAYER] = vr_wing_image
+//MITHRAstation edit END - Wings
 
 //Adds a collar overlay above the helmet layer if the suit has one
 //	Suit needs an identically named sprite in icons/mob/collar.dmi

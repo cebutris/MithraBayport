@@ -163,6 +163,8 @@
 		H.dna.UpdateUI()
 
 	//H.set_cloned_appearance() - Deprecated, but it just makes clones bald and stuff. Also regenerates icons.
+	for(var/thing in H.organs)
+		H.species.post_organ_rejuvenate(thing, H)
 	H.regenerate_icons()
 	update_icon()
 
@@ -217,8 +219,8 @@
 		occupant.adjustBrainLoss(-(ceil(0.5*heal_rate)))
 
 		//So clones don't die of oxyloss in a running pod.
-		if(occupant.reagents.get_reagent_amount("inaprovaline") < 30)
-			occupant.reagents.add_reagent("inaprovaline", 60)
+		if(occupant.reagents.get_reagent_amount(/datum/reagent/inaprovaline) < 30)
+			occupant.reagents.add_reagent(/datum/reagent/inaprovaline, 60)
 		occupant.Sleeping(30)
 		//Also heal some oxyloss ourselves because inaprovaline is so bad at preventing it!!
 		occupant.adjustOxyLoss(-4)
