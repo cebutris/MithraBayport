@@ -12,11 +12,12 @@
 /obj/item/weapon/disk/limb/talon
 	company = "Talon LLC"
 */
-/datum/robolimb/zenghu_taj //This wasn't indented. At all. It's a miracle this didn't break literally everything.
+/datum/robolimb/zenghu_taj
 	company = "Zeng-Hu - Tajaran"
 	desc = "This limb has a rubbery fleshtone covering with visible seams."
 	icon = 'modular_mithra/icons/mob/human_races/cyberlimbs/zenghu/zenghu_taj.dmi'
 	unavailable_at_fab = 1
+	skintone = 1
 	applies_to_part = list(BP_HEAD)
 
 /datum/robolimb/eggnerdltdred
