@@ -1,5 +1,5 @@
 /obj/effect/overmap/ship/torch
-	name = "SEV Torch"
+	name = "NDV Immortal"
 	fore_dir = WEST
 	vessel_mass = 40000
 	start_x = 4
