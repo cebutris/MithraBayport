@@ -9,13 +9,12 @@
 	tail_blend = ICON_MULTIPLY
 	hidden_from_codex = TRUE
 
-	spawn_flags = SPECIES_IS_RESTRICTED //Used only for custom species. Should not be selectable as a race by itself
+	spawn_flags = SPECIES_IS_RESTRICTED | SPECIES_IS_ICONBASE //Used only for custom species. Should not be selectable as a race by itself
 
 	unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/kick, /datum/unarmed_attack/punch)
 
 	description = "If you see this, you're either an admin or something has gone wrong"
 
-	spawn_flags = SPECIES_CAN_JOIN
 	appearance_flags = HAS_HAIR_COLOR | HAS_UNDERWEAR | HAS_SKIN_COLOR | HAS_EYE_COLOR
 
 	sexybits_location = BP_GROIN //this is possibly my favorite variable just because of how out of place it is.

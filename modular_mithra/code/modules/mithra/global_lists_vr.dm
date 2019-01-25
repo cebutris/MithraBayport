@@ -52,6 +52,15 @@ var/global/list/custom_species_bases = list() // Species that can be used for a 
 
 	// Custom species icon bases
 	var/list/blacklisted_icons = list(SPECIES_CUSTOM,SPECIES_PROMETHEAN,SPECIES_HUMAN) //Just ones that won't work well, and Humans, as Custom Humans will be used instead.
+	for(var/species_name in all_species)
+		if(species_name in blacklisted_icons)
+			continue
+		var/datum/species/S = all_species[species_name]
+		if(!(S.spawn_flags & SPECIES_IS_ICONBASE))
+			continue
+		custom_species_bases += species_name
+
+
 	for(var/species_name in playable_species)
 		if(species_name in blacklisted_icons)
 			continue
