@@ -101,7 +101,7 @@ var/global/list/datum/dna/gene/dna_genes[0]
 
 	// MITHRAstation CUSTOM SPECIES
 	var/custom_species
-	var/base_species = "Human"
+	var/base_species = "Custom Human"
 	var/list/species_traits = list()
 	var/blood_color = "#A10808"
 	// MITHRAstation CUSTOM SPECIES END
