@@ -76,7 +76,7 @@
 	if(selected_species.selects_bodytype)
 		// Allowed!
 	else if(!pref.custom_base || !(pref.custom_base in custom_species_bases))
-		pref.custom_base = SPECIES_HUMAN
+		pref.custom_base = SPECIES_HUMAN2
 
 obj/item/organ/external
 	var/custom_species_override
@@ -114,7 +114,7 @@ datum/preferences/copy_to(mob/living/carbon/human/character, is_preview_copy = F
 	var/datum/species/selected_species = all_species[pref.species]
 	if(selected_species.selects_bodytype)
 		. += "<b>Icon Base: </b> "
-		. += "<a href='?src=\ref[src];custom_base=1'>[pref.custom_base ? pref.custom_base : "Human"]</a><br>"
+		. += "<a href='?src=\ref[src];custom_base=1'>[pref.custom_base ? pref.custom_base : "Custom Human"]</a><br>"
 
 	if(pref.species == SPECIES_CUSTOM)
 		var/points_left = pref.starting_trait_points

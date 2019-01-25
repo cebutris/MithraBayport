@@ -12,7 +12,7 @@ var/global/list/traits_costs = list()		// Just path = cost list, saves time in c
 var/global/list/all_traits = list() // All of 'em at once (same instances)
 var/global/list/custom_species_bases = list() // Species that can be used for a Custom Species icon base
 
-/hook/startup/proc/init_vore_datum_ref_lists()
+/hook/startup/proc/init_vore_datum_ref_lists() //TODO: Restructure this to remove 'vore' if possible
 	var/paths
 
 	// Custom Ears
@@ -51,7 +51,16 @@ var/global/list/custom_species_bases = list() // Species that can be used for a 
 				positive_traits[path] = instance
 
 	// Custom species icon bases
-	var/list/blacklisted_icons = list(SPECIES_CUSTOM,SPECIES_PROMETHEAN) //Just ones that won't work well.
+	var/list/blacklisted_icons = list(SPECIES_CUSTOM,SPECIES_PROMETHEAN,SPECIES_HUMAN) //Just ones that won't work well, and Humans, as Custom Humans will be used instead.
+	for(var/species_name in all_species)
+		if(species_name in blacklisted_icons)
+			continue
+		var/datum/species/S = all_species[species_name]
+		if(!(S.spawn_flags & SPECIES_IS_ICONBASE))
+			continue
+		custom_species_bases += species_name
+
+
 	for(var/species_name in playable_species)
 		if(species_name in blacklisted_icons)
 			continue
