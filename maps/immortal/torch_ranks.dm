@@ -92,7 +92,7 @@
 		/datum/mil_rank/ec/o6
 	)
 
-	assistant_job = "Crewman"
+	assistant_job = /datum/job/crew
 
 	min_skill = list(	SKILL_SCIENCE = SKILL_BASIC,
 						SKILL_EVA     = SKILL_BASIC)
@@ -151,7 +151,7 @@
 		/datum/mil_rank/fleet/o5
 	)
 
-	assistant_job = "Crewman"
+	assistant_job = /datum/job/crew
 	min_skill = list(	SKILL_HAULING = SKILL_BASIC,
 						SKILL_WEAPONS = SKILL_BASIC,
 						SKILL_EVA     = SKILL_BASIC)
@@ -187,14 +187,14 @@
 		/datum/mil_rank/army/o10_alt
 	)
 
-	assistant_job = "Crewman"
+	assistant_job = /datum/job/crew
 	min_skill = list(	SKILL_HAULING = SKILL_ADEPT,
 	                    SKILL_WEAPONS = SKILL_BASIC,
 	                    SKILL_COMBAT  = SKILL_BASIC)
 
 /datum/mil_branch/civilian
 	name = "Civilian"
-	name_short = "civ"
+	name_short = "Civ"
 	email_domain = "freemail.net"
 
 	rank_types = list(
@@ -209,8 +209,6 @@
 		/datum/mil_rank/civ/synthetic
 	)
 
-	assistant_job = "Passenger"
-
 /datum/mil_branch/solgov
 	name = "SolGov Employee"
 	name_short = "SCG"
@@ -218,13 +216,43 @@
 
 	rank_types = list(
 		/datum/mil_rank/sol/gov,
-		/datum/mil_rank/sol/agent
+		/datum/mil_rank/sol/agent,
+		/datum/mil_rank/sol/scientist
 	)
 
 	spawn_rank_types = list(
 		/datum/mil_rank/sol/gov,
-		/datum/mil_rank/sol/agent
+		/datum/mil_rank/sol/agent,
+		/datum/mil_rank/sol/scientist
 	)
+
+/datum/mil_branch/terran
+	name = "Independent Navy"
+	name_short = "ICCGN"
+	email_domain = "gilgamesh.navy.mil"
+
+	rank_types = list(
+		/datum/mil_rank/terran/e1,
+		/datum/mil_rank/terran/e3,
+		/datum/mil_rank/terran/e4,
+		/datum/mil_rank/terran/e6,
+		/datum/mil_rank/terran/e7,
+		/datum/mil_rank/terran/e9,
+		/datum/mil_rank/terran/e9_alt1,
+		/datum/mil_rank/terran/o1,
+		/datum/mil_rank/terran/o2,
+		/datum/mil_rank/terran/o3,
+		/datum/mil_rank/terran/o4,
+		/datum/mil_rank/terran/o5,
+		/datum/mil_rank/terran/o6,
+		/datum/mil_rank/terran/o7,
+		/datum/mil_rank/terran/o8,
+		/datum/mil_rank/terran/o9,
+		/datum/mil_rank/terran/o10
+	)
+	min_skill = list(	SKILL_HAULING = SKILL_BASIC,
+						SKILL_WEAPONS = SKILL_BASIC,
+						SKILL_EVA     = SKILL_BASIC)
 
 /datum/mil_rank/grade()
 	. = ..()
@@ -467,8 +495,8 @@
 	sort_order = 16
 
 /*
- *  Fleet
- *  =====
+ *  Army
+ *  ====
  */
 /datum/mil_rank/army/e1
 	name = "Private"
@@ -615,13 +643,15 @@
 
 /datum/mil_rank/civ/civ
 	name = "Civilian"
-	name_short = null
+	name_short = "Civ"
 
 /datum/mil_rank/civ/contractor
 	name = "Contractor"
+	name_short = "Con"
 
 /datum/mil_rank/civ/synthetic
 	name = "Synthetic"
+	name_short = "Syn"
 
 /*
  *  SolGov Employees
@@ -630,9 +660,121 @@
 
 /datum/mil_rank/sol/gov
 	name = "SolGov Representative"
+	name_short = "SGR"
 	accessory = list(/obj/item/clothing/accessory/badge/solgov/representative)
 
 /datum/mil_rank/sol/agent
 	name = "OCIE Agent"
 	name_short = "AGT"
 	accessory = list(/obj/item/clothing/accessory/badge/ocieagent)
+
+/datum/mil_rank/sol/scientist
+	name = "Government Scientist"
+	name_short = "GOVT"
+
+/*
+ *  Terrans
+ *  =======
+ */
+
+/datum/mil_rank/terran/e1
+	name = "Sailor Recruit"
+	name_short = "SlrRct"
+	accessory = list(/obj/item/clothing/accessory/terran/rank/navy/enlisted)
+	sort_order = 1
+
+/datum/mil_rank/terran/e3
+	name = "Sailor"
+	name_short = "Slr"
+	accessory = list(/obj/item/clothing/accessory/terran/rank/navy/enlisted/e3)
+	sort_order = 3
+
+/datum/mil_rank/terran/e4
+	name = "Bosman"
+	name_short = "Bsn"
+	accessory = list(/obj/item/clothing/accessory/terran/rank/navy/enlisted/e4)
+	sort_order = 4
+
+/datum/mil_rank/terran/e6
+	name = "Starszy Bosman"
+	name_short = "SBsn"
+	accessory = list(/obj/item/clothing/accessory/terran/rank/navy/enlisted/e6)
+	sort_order = 6
+
+/datum/mil_rank/terran/e7
+	name = "Glavny Starshina"
+	name_short = "GStr"
+	accessory = list(/obj/item/clothing/accessory/terran/rank/navy/enlisted/e7)
+	sort_order = 7
+
+/datum/mil_rank/terran/e9
+	name = "Michman"
+	name_short = "Mch"
+	accessory = list(/obj/item/clothing/accessory/terran/rank/navy/enlisted/e9)
+	sort_order = 9
+
+/datum/mil_rank/terran/e9_alt1
+	name = "Michman of the Independent Navy"
+	name_short = "MchNvy"
+	accessory = list(/obj/item/clothing/accessory/terran/rank/navy/enlisted/e9_alt1)
+	sort_order = 9
+
+/datum/mil_rank/terran/o1
+	name = "Ensign"
+	name_short = "ENS"
+	accessory = list(/obj/item/clothing/accessory/terran/rank/navy/officer)
+	sort_order = 11
+
+/datum/mil_rank/terran/o2
+	name = "Leytenant"
+	name_short = "Lyt"
+	accessory = list(/obj/item/clothing/accessory/terran/rank/navy/officer/o2)
+	sort_order = 12
+
+/datum/mil_rank/terran/o3
+	name = "Starshy Leytenant"
+	name_short = "SLyt"
+	accessory = list(/obj/item/clothing/accessory/terran/rank/navy/officer/o3)
+	sort_order = 13
+
+/datum/mil_rank/terran/o4
+	name = "Corvette-Komandor"
+	name_short = "CvtKdr"
+	accessory = list(/obj/item/clothing/accessory/terran/rank/navy/officer/o4)
+	sort_order = 14
+
+/datum/mil_rank/terran/o5
+	name = "Komandor"
+	name_short = "Kdr"
+	accessory = list(/obj/item/clothing/accessory/terran/rank/navy/officer/o5)
+	sort_order = 15
+
+/datum/mil_rank/terran/o6
+	name = "Kapitan"
+	name_short = "Kpt"
+	accessory = list(/obj/item/clothing/accessory/terran/rank/navy/officer/o6)
+	sort_order = 16
+
+/datum/mil_rank/terran/o7
+	name = "Kontradmiral"
+	name_short = "KtrAdm"
+	accessory = list(/obj/item/clothing/accessory/terran/rank/navy/flag)
+	sort_order = 17
+
+/datum/mil_rank/terran/o8
+	name = "Wiceadmiral"
+	name_short = "WcAdm"
+	accessory = list(/obj/item/clothing/accessory/terran/rank/navy/flag/o8)
+	sort_order = 18
+
+/datum/mil_rank/terran/o9
+	name = "Admiral"
+	name_short = "Adm"
+	accessory = list(/obj/item/clothing/accessory/terran/rank/navy/flag/o9)
+	sort_order = 19
+
+/datum/mil_rank/terran/o10
+	name = "Admiral of the Independent Navy"
+	name_short = "AdmNvy"
+	accessory = list(/obj/item/clothing/accessory/terran/rank/navy/flag/o10)
+	sort_order = 20

@@ -74,12 +74,8 @@
 	..()
 
 /datum/job
-	allowed_branches = list(
-		/datum/mil_branch/civilian
-	)
-	allowed_ranks = list(
-		/datum/mil_rank/civ/civ
-	)
+	allowed_ranks = null
+	allowed_branches = null
 
 /datum/map/torch
 	default_assistant_title = "Passenger"
