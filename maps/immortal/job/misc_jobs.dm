@@ -35,7 +35,7 @@ Civilian
 		"Sociologist",
 		"Trainer")
 	outfit_type = /decl/hierarchy/outfit/job/torch/passenger/passenger
-	required_education = EDUCATION_TIER_NONE
+	//required_education = EDUCATION_TIER_NONE
 
 /datum/job/merchant
 	title = "Merchant"

@@ -134,6 +134,18 @@
 	id = access_commissary
 	desc = "Commissary"
 	region = ACCESS_REGION_GENERAL
+	
+/datum/access/psychiatrist
+	desc = "Mental Health"
+	
+/datum/access/hos
+	desc = "Chief of Security"
+	
+/datum/access/hop
+	desc = "Executive Officer"
+		
+/datum/access/qm
+	desc = "Deck Chief"
 
 /************
 * SEV Torch *
@@ -187,7 +199,7 @@
 /var/const/access_petrov_rd = 206
 /datum/access/petrov_rd
 	id = access_petrov_rd
-	desc = "Petrov Research Director's Office"
+	desc = "Petrov Chief Science Officer's Office"
 	region = ACCESS_REGION_NT
 
 /var/const/access_petrov_security = 207

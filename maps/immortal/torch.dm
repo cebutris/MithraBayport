@@ -40,6 +40,12 @@
 	#include "items/clothing/solgov-head.dm"
 	#include "items/clothing/solgov-suit.dm"
 	#include "items/clothing/solgov-under.dm"
+	#include "items/clothing/terran-accessory.dm"
+	#include "items/clothing/terran-feet.dm"
+	#include "items/clothing/terran-hands.dm"
+	#include "items/clothing/terran-head.dm"
+	#include "items/clothing/terran-suit.dm"
+	#include "items/clothing/terran-under.dm"
 
 	#include "job/torch_access.dm"
 	#include "job/torch_outfits.dm"
@@ -53,6 +59,7 @@
 	#include "job/security_jobs.dm"
 	#include "job/service_jobs.dm"
 	#include "job/supply_jobs.dm"
+	#include "job/corporate_jobs.dm"
 
 	#include "machinery/apc_shuttle.dm"
 	#include "machinery/keycard authentication.dm"
@@ -69,6 +76,7 @@
 	#include "structures/closets/services.dm"
 	#include "structures/closets/supply.dm"
 	#include "structures/closets/exploration.dm"
+	#include "structures/closets/closet_appearances.dm"
 
 	#include "loadout/_defines.dm"
 	#include "loadout/loadout_accessories.dm"

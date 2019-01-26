@@ -24,4 +24,3 @@
 	display_name = "gloves, duty"
 	path = /obj/item/clothing/gloves/duty
 	cost = 3
-	allowed_roles = MILITARY_ROLES
