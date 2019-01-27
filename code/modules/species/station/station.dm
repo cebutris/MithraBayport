@@ -12,6 +12,7 @@
 	min_age = 17
 	max_age = 100
 	hidden_from_codex = FALSE
+	bandages_icon = 'icons/mob/bandage.dmi'
 
 	gluttonous = GLUT_TINY
 
@@ -99,6 +100,7 @@
 	icobase = 'icons/mob/human_races/species/skrell/body.dmi'
 	deform = 'icons/mob/human_races/species/skrell/deformed_body.dmi'
 	preview_icon = 'icons/mob/human_races/species/skrell/preview.dmi'
+	bandages_icon = 'icons/mob/bandage.dmi'
 	primitive_form = "Neaera"
 	unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/kick, /datum/unarmed_attack/punch, /datum/unarmed_attack/bite)
 	description = "An amphibious species, Skrell come from the star system known as Qerr'Vallis, which translates to 'Star of \
@@ -152,7 +154,7 @@
 	override_limb_types = list(BP_HEAD = /obj/item/organ/external/head/skrell)
 
 	descriptors = list(
-		/datum/mob_descriptor/height = 1.2,
+		/datum/mob_descriptor/height = 1,
 		/datum/mob_descriptor/build = 0,
 		/datum/mob_descriptor/headtail_length = 0
 	)
@@ -182,18 +184,12 @@
 			RELIGION_ATHEISM,
 			RELIGION_DEISM,
 			RELIGION_AGNOSTICISM
-		),
-		TAG_EDUCATION = list(
-			EDUCATION_SKRELL_FAILURE,
-			EDUCATION_SKRELL_BASIC,
-			EDUCATION_SKRELL_FULL,
-			EDUCATION_SKRELL_FULL_SCIENCE,
-			EDUCATION_SKRELL_FULL_DOCTOR
 		)
 	)
 
 	has_organ = list(
 		BP_HEART =    /obj/item/organ/internal/heart,
+		BP_STOMACH =  /obj/item/organ/internal/stomach,
 		BP_LUNGS =    /obj/item/organ/internal/lungs/gills,
 		BP_LIVER =    /obj/item/organ/internal/liver,
 		BP_KIDNEYS =  /obj/item/organ/internal/kidneys,

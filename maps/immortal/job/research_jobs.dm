@@ -12,7 +12,7 @@
 	ideal_character_age = 50
 	alt_titles = list(
 		"Research Supervisor")
-	outfit_type = /decl/hierarchy/outfit/job/torch/passenger/research/senior_scientist
+	outfit_type = /decl/hierarchy/outfit/job/torch/crew/research/senior_scientist
 
 	access = list(access_tox, access_tox_storage, access_research, access_mining, access_mining_office,
 						access_mining_station, access_xenobiology, access_xenoarch, access_nanotrasen,
@@ -30,7 +30,7 @@
 	                    SKILL_DEVICES     = SKILL_MAX,
 	                    SKILL_SCIENCE     = SKILL_MAX)
 	skill_points = 20
-	required_education = EDUCATION_TIER_DOCTORATE
+	//required_education = EDUCATION_TIER_DOCTORATE
 
 /datum/job/scientist
 	title = "Scientist"
@@ -64,33 +64,7 @@
 						access_petrov_analysis, access_petrov_phoron, access_petrov_toxins, access_petrov_chemistry)
 	minimal_access = list()
 	skill_points = 20
-	required_education = EDUCATION_TIER_MASTERS
-
-/datum/job/guard
-	title = "Security Guard"
-	department = "Science"
-	department_flag = SCI
-	total_positions = 2
-	spawn_positions = 2
-	supervisors = "the Research Director, the Corporate Liaison and science personnel"
-	selection_color = "#633d63"
-	economic_power = 6
-	minimal_player_age = 0
-	ideal_character_age = 25
-	outfit_type = /decl/hierarchy/outfit/job/torch/passenger/research/guard
-	min_skill = list(   SKILL_COMBAT  = SKILL_BASIC,
-	                    SKILL_WEAPONS = SKILL_BASIC)
-
-	max_skill = list(   SKILL_COMBAT      = SKILL_MAX,
-	                    SKILL_WEAPONS     = SKILL_MAX,
-	                    SKILL_SCIENCE     = SKILL_MAX,
-	                    SKILL_DEVICES     = SKILL_MAX)
-
-	access = list(access_tox, access_tox_storage,access_research, access_mining, access_mining_office, access_mining_station, access_xenobiology,
-						access_xenoarch, access_nanotrasen, access_sec_guard, access_hangar, access_petrov, access_petrov_helm, access_expedition_shuttle, access_guppy,
-						access_petrov_analysis, access_petrov_phoron, access_petrov_toxins, access_petrov_chemistry, access_petrov_security, access_petrov_maint)
-	required_education = EDUCATION_TIER_DROPOUT
-	//maximum_education = EDUCATION_TIER_BACHELOR
+	//required_education = EDUCATION_TIER_MASTERS
 
 /datum/job/scientist_assistant
 	title = "Research Assistant"
@@ -117,7 +91,7 @@
 	                    SKILL_SCIENCE     = SKILL_MAX)
 
 	access = list(access_research, access_mining_office, access_nanotrasen, access_petrov, access_expedition_shuttle, access_guppy, access_hangar)
-	required_education = EDUCATION_TIER_DROPOUT
+	//required_education = EDUCATION_TIER_DROPOUT
 	//maximum_education = EDUCATION_TIER_BACHELOR
 
 /datum/job/xenolife_technician
@@ -147,5 +121,5 @@
 						access_expedition_shuttle, access_guppy, access_hangar,  access_solgov_crew, access_emergency_storage)
 	minimal_access = list()
 	skill_points = 16
-	required_education = EDUCATION_TIER_BACHELOR
+	//required_education = EDUCATION_TIER_BACHELOR
 	//maximum_education = EDUCATION_TIER_DOCTORATE

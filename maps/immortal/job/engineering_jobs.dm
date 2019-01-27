@@ -34,7 +34,7 @@
 							 /datum/computer_file/program/rcon_console,
 							 /datum/computer_file/program/camera_monitor,
 							 /datum/computer_file/program/shields_monitor)
-	required_education = EDUCATION_TIER_TRADE
+	//required_education = EDUCATION_TIER_TRADE
 	//maximum_education = EDUCATION_TIER_BACHELOR
 
 /datum/job/senior_engineer/get_description_blurb()
@@ -82,7 +82,7 @@
 							 /datum/computer_file/program/rcon_console,
 							 /datum/computer_file/program/camera_monitor,
 							 /datum/computer_file/program/shields_monitor)
-	required_education = EDUCATION_TIER_TRADE
+	//required_education = EDUCATION_TIER_TRADE
 	//maximum_education = EDUCATION_TIER_BACHELOR
 
 /datum/job/engineer/get_description_blurb()
@@ -129,7 +129,7 @@
 							 /datum/computer_file/program/rcon_console,
 							 /datum/computer_file/program/camera_monitor,
 							 /datum/computer_file/program/shields_monitor)
-	required_education = EDUCATION_TIER_TRADE
+	//required_education = EDUCATION_TIER_TRADE
 	//maximum_education = EDUCATION_TIER_BACHELOR
 
 /datum/job/engineer_contractor/get_description_blurb()
@@ -174,7 +174,7 @@
 							 /datum/computer_file/program/rcon_console,
 							 /datum/computer_file/program/camera_monitor,
 							 /datum/computer_file/program/shields_monitor)
-	required_education = EDUCATION_TIER_BASIC
+	//required_education = EDUCATION_TIER_BASIC
 	//maximum_education = EDUCATION_TIER_TRADE
 
 /datum/job/engineer_trainee/get_description_blurb()
@@ -208,7 +208,7 @@
 
 	access = list(access_robotics, access_robotics_engineering, access_tech_storage, access_morgue, access_medical, access_robotics_engineering, access_solgov_crew)
 	minimal_access = list()
-	required_education = EDUCATION_TIER_TRADE
+	//required_education = EDUCATION_TIER_TRADE
 	//maximum_education = EDUCATION_TIER_DOCTORATE
 
 /datum/job/roboticist/get_description_blurb()

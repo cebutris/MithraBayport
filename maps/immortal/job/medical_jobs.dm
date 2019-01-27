@@ -32,7 +32,7 @@
 
 	software_on_spawn = list(/datum/computer_file/program/suit_sensors,
 							 /datum/computer_file/program/camera_monitor)
-	required_education = EDUCATION_TIER_MEDSCHOOL
+	//required_education = EDUCATION_TIER_MEDSCHOOL
 
 /datum/job/doctor
 	title = "Doctor"
@@ -63,7 +63,7 @@
 	software_on_spawn = list(/datum/computer_file/program/suit_sensors,
 							 /datum/computer_file/program/camera_monitor)
 	skill_points = 26
-	required_education = EDUCATION_TIER_TRADE
+	//required_education = EDUCATION_TIER_TRADE
 	//maximum_education = EDUCATION_TIER_MASTERS
 
 /datum/job/doctor_contractor
@@ -97,7 +97,7 @@
 
 	software_on_spawn = list(/datum/computer_file/program/suit_sensors,
 							 /datum/computer_file/program/camera_monitor)
-	required_education = EDUCATION_TIER_TRADE
+	//required_education = EDUCATION_TIER_TRADE
 
 /datum/job/biomech
 	title = "Biomechanical Engineer"
@@ -125,7 +125,7 @@
 	skill_points = 24
 	access = list(access_robotics, access_robotics_engineering, access_tech_storage, access_morgue, access_medical, access_solgov_crew)
 	minimal_access = list()
-	required_education = EDUCATION_TIER_MEDSCHOOL
+	//required_education = EDUCATION_TIER_MEDSCHOOL
 
 /datum/job/biomech/get_description_blurb()
 	return "You are the Biomechanical Engineer. You are responsible for repairing, upgrading and handling all bio-synthetic crew (like FBPs) on board. You are also responsible for placing brains into MMI’s and anything involving augments. You answer to the Chief Medical Officer and the Corporate Liaison."
@@ -160,7 +160,7 @@
 
 	software_on_spawn = list(/datum/computer_file/program/suit_sensors,
 							 /datum/computer_file/program/camera_monitor)
-	required_education = EDUCATION_TIER_BASIC
+	//required_education = EDUCATION_TIER_BASIC
 	//maximum_education = EDUCATION_TIER_BACHELOR
 
 /datum/job/medical_trainee/get_description_blurb()
@@ -187,7 +187,7 @@
 
 	access = list(access_medical, access_maint_tunnels, access_emergency_storage, access_medical_equip, access_solgov_crew, access_chemistry)
 	minimal_access = list()
-	required_education = EDUCATION_TIER_BACHELOR
+	//required_education = EDUCATION_TIER_BACHELOR
 
 /datum/job/psychiatrist
 	title = "Counselor"
@@ -212,4 +212,4 @@
 
 	software_on_spawn = list(/datum/computer_file/program/suit_sensors,
 							 /datum/computer_file/program/camera_monitor)
-	required_education = EDUCATION_TIER_BACHELOR
+	//required_education = EDUCATION_TIER_BACHELOR

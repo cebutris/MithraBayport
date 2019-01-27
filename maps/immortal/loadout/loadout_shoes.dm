@@ -15,7 +15,6 @@
 	allowed_roles = SEMIFORMAL_ROLES
 
 /datum/gear/shoes/color
-	allowed_roles = NON_MILITARY_ROLES
 
 /datum/gear/shoes/flats
 	allowed_roles = SEMIANDFORMAL_ROLES

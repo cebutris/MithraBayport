@@ -95,7 +95,6 @@
 	//allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/uniform/corp_guard
-	allowed_roles = list(/datum/job/guard)
 
 /datum/gear/uniform/corp_exec
 	allowed_roles = list(/datum/job/senior_scientist)

@@ -25,7 +25,7 @@
 
 	software_on_spawn = list(/datum/computer_file/program/deck_management,
 							 /datum/computer_file/program/reports)
-	required_education = EDUCATION_TIER_BACHELOR
+	//required_education = EDUCATION_TIER_BACHELOR
 	//maximum_education = EDUCATION_TIER_MASTERS
 
 /datum/job/pathfinder/get_description_blurb()
@@ -43,16 +43,19 @@
 	minimal_player_age = 0
 	ideal_character_age = 25
 	outfit_type = /decl/hierarchy/outfit/job/torch/passenger/pilot
-
-	access = list(access_mining_office,
-						access_mining_station, access_expedition_shuttle, access_expedition_shuttle_helm, access_guppy,
-						access_hangar, access_guppy_helm, access_mining, access_pilot, access_solgov_crew, access_eva, access_explorer)
+	access = list(
+		access_mining_office, access_petrov, access_petrov_helm, access_petrov_analysis, access_petrov_phoron,
+		access_petrov_toxins, access_petrov_chemistry, access_petrov_maint, access_mining_station, access_expedition_shuttle,
+		access_expedition_shuttle_helm, access_guppy, access_hangar, access_guppy_helm, access_mining, access_pilot,
+		access_solgov_crew, access_eva, access_explorer, access_tox, access_tox_storage, access_research, access_xenobiology,
+		access_xenoarch
+	)
 	min_skill = list(	SKILL_EVA   = SKILL_BASIC,
 						SKILL_PILOT = SKILL_ADEPT)
 
 	max_skill = list(   SKILL_PILOT       = SKILL_MAX,
 	                    SKILL_SCIENCE     = SKILL_MAX)
-	required_education = EDUCATION_TIER_BASIC
+	//required_education = EDUCATION_TIER_BASIC
 	//maximum_education = EDUCATION_TIER_BACHELOR
 
 /datum/job/explorer
@@ -75,7 +78,7 @@
 	access = list(access_explorer, access_maint_tunnels, access_eva, access_emergency_storage, access_guppy_helm, access_solgov_crew, access_expedition_shuttle, access_guppy, access_hangar, access_cent_creed)
 
 	software_on_spawn = list(/datum/computer_file/program/deck_management)
-	required_education = EDUCATION_TIER_BASIC
+	//required_education = EDUCATION_TIER_BASIC
 	//maximum_education = EDUCATION_TIER_BACHELOR
 
 /datum/job/explorer/get_description_blurb()
