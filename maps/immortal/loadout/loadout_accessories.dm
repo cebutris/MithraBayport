@@ -139,14 +139,14 @@
 	allowed_roles = ARMORED_ROLES
 
 /datum/gear/clothing/hawaii
-////	allowed_roles = SEMIFORMAL_ROLES
+//	allowed_roles = SEMIFORMAL_ROLES
 	//allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/clothing/scarf
 //	allowed_roles = SEMIANDFORMAL_ROLES
 
 /datum/gear/clothing/flannel
-////	allowed_roles = SEMIFORMAL_ROLES
+//	allowed_roles = SEMIFORMAL_ROLES
 	//allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/clothing/vest
