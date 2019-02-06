@@ -10,10 +10,10 @@
 	//allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/uniform/shortjumpskirt
-////	allowed_roles = RESTRICTED_ROLES
+//	allowed_roles = RESTRICTED_ROLES
 
 /datum/gear/uniform/blackjumpshorts
-////	allowed_roles = RESTRICTED_ROLES
+//	allowed_roles = RESTRICTED_ROLES
 
 /datum/gear/uniform/roboticist_skirt
 	allowed_roles = list(/datum/job/roboticist)
@@ -66,7 +66,7 @@
 	//allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/uniform/shorts
-////	allowed_roles = RESTRICTED_ROLES
+//	allowed_roles = RESTRICTED_ROLES
 
 /datum/gear/uniform/shorts/custom
 //	allowed_roles = FORMAL_ROLES
@@ -77,7 +77,7 @@
 	//allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/tactical/tacticool
-////	allowed_roles = RESTRICTED_ROLES
+//	allowed_roles = RESTRICTED_ROLES
 
 /datum/gear/uniform/corporate
 	//allowed_branches = CIVILIAN_BRANCHES
