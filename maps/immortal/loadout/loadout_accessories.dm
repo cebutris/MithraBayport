@@ -139,28 +139,28 @@
 	allowed_roles = ARMORED_ROLES
 
 /datum/gear/clothing/hawaii
-	allowed_roles = SEMIFORMAL_ROLES
+////	allowed_roles = SEMIFORMAL_ROLES
 	//allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/clothing/scarf
-	allowed_roles = SEMIANDFORMAL_ROLES
+//	allowed_roles = SEMIANDFORMAL_ROLES
 
 /datum/gear/clothing/flannel
-	allowed_roles = SEMIFORMAL_ROLES
+////	allowed_roles = SEMIFORMAL_ROLES
 	//allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/clothing/vest
-	allowed_roles = FORMAL_ROLES
+//	allowed_roles = FORMAL_ROLES
 	//allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/clothing/suspenders
 	//allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/clothing/wcoat
-	allowed_roles = FORMAL_ROLES
+//	allowed_roles = FORMAL_ROLES
 
 /datum/gear/clothing/zhongshan
-	allowed_roles = FORMAL_ROLES
+//	allowed_roles = FORMAL_ROLES
 
 /datum/gear/clothing/dashiki
 	//allowed_branches = CIVILIAN_BRANCHES
@@ -169,7 +169,7 @@
 	//allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/clothing/sherwani
-	allowed_roles = FORMAL_ROLES
+//	allowed_roles = FORMAL_ROLES
 
 /datum/gear/clothing/qipao
 	//allowed_branches = CIVILIAN_BRANCHES

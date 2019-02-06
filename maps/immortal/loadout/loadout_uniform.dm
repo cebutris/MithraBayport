@@ -10,74 +10,74 @@
 	//allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/uniform/shortjumpskirt
-	allowed_roles = RESTRICTED_ROLES
+////	allowed_roles = RESTRICTED_ROLES
 
 /datum/gear/uniform/blackjumpshorts
-	allowed_roles = RESTRICTED_ROLES
+////	allowed_roles = RESTRICTED_ROLES
 
 /datum/gear/uniform/roboticist_skirt
 	allowed_roles = list(/datum/job/roboticist)
 
 /datum/gear/uniform/suit
-	allowed_roles = FORMAL_ROLES
+//	allowed_roles = FORMAL_ROLES
 	//allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/uniform/scrubs
 	allowed_roles = STERILE_ROLES
 
 /datum/gear/uniform/dress
-	allowed_roles = FORMAL_ROLES
+//	allowed_roles = FORMAL_ROLES
 	//allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/uniform/cheongsam
-	allowed_roles = FORMAL_ROLES
+//	allowed_roles = FORMAL_ROLES
 	//allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/uniform/abaya
-	allowed_roles = FORMAL_ROLES
+//	allowed_roles = FORMAL_ROLES
 	//allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/uniform/skirt
-	allowed_roles = FORMAL_ROLES
+//	allowed_roles = FORMAL_ROLES
 	//allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/uniform/skirt_c
-	allowed_roles = FORMAL_ROLES
+//	allowed_roles = FORMAL_ROLES
 	//allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/uniform/skirt_c/dress
-	allowed_roles = FORMAL_ROLES
+//	allowed_roles = FORMAL_ROLES
 	//allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/uniform/casual_pants
-	allowed_roles = SEMIFORMAL_ROLES
+//	allowed_roles = SEMIFORMAL_ROLES
 	//allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/uniform/formal_pants
-	allowed_roles = FORMAL_ROLES
+//	allowed_roles = FORMAL_ROLES
 	//allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/uniform/formal_pants/custom
-	allowed_roles = FORMAL_ROLES
+//	allowed_roles = FORMAL_ROLES
 	//allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/uniform/formal_pants/baggycustom
-	allowed_roles = FORMAL_ROLES
+//	allowed_roles = FORMAL_ROLES
 	//allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/uniform/shorts
-	allowed_roles = RESTRICTED_ROLES
+////	allowed_roles = RESTRICTED_ROLES
 
 /datum/gear/uniform/shorts/custom
-	allowed_roles = FORMAL_ROLES
+//	allowed_roles = FORMAL_ROLES
 	//allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/uniform/turtleneck
-	allowed_roles = FORMAL_ROLES
+//	allowed_roles = FORMAL_ROLES
 	//allowed_branches = CIVILIAN_BRANCHES
 
 /datum/gear/tactical/tacticool
-	allowed_roles = RESTRICTED_ROLES
+////	allowed_roles = RESTRICTED_ROLES
 
 /datum/gear/uniform/corporate
 	//allowed_branches = CIVILIAN_BRANCHES
