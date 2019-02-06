@@ -67,10 +67,10 @@
 	allowed_roles = TECHNICAL_ROLES
 
 /datum/gear/head/formalhat
-	allowed_roles = FORMAL_ROLES
+//	allowed_roles = FORMAL_ROLES
 
 /datum/gear/head/informalhat
-	allowed_roles = SEMIFORMAL_ROLES
+//	allowed_roles = SEMIFORMAL_ROLES
 
 /datum/gear/head/welding
 	allowed_roles = TECHNICAL_ROLES
