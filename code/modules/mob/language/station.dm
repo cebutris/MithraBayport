@@ -58,7 +58,14 @@
 	"hal","ket","jurl","mah","tul","cresh","azu","ragh","mro","mra","mrro","mrra")
 	shorthand = "TJ"
 
-//////// Tajaran Language Names Insert here ////////
+/datum/language/tajaran/get_random_name(var/gender)
+
+	var/new_name = ..(gender,1)
+	if(prob(50))
+		new_name += " [pick(list("Hadii","Kaytam","Nazkiin","Zhan-Khazan","Hharar","Njarir'Akhan","Faaira'Nrezi","Rhezar","Mi'dynh","Rrhazkal","Bayan","Al'Manq","Mi'jri","Chur'eech","Sanu'dra","Ii'rka"))]"
+	else
+		new_name += " [..(gender,1)]"
+	return new_name
 
 /datum/language/tajsign // Adding back Tajara. - HTG
 	name = LANGUAGE_SIIK_TAJR
