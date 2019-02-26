@@ -3,7 +3,7 @@
 	desc = "Officially licensed to take your money."
 	icon_state = "card_pack_spaceball"
 
-/obj/item/weapon/pack/spaceball/New()
+/obj/item/weapon/pack/spaceball/New() // Adding back Tajara. - HTG
 	var/datum/playingcard/P
 	var/i
 	var/year = 544 + text2num(time2text(world.timeofday, "YYYY"))
@@ -14,7 +14,7 @@
 			P.desc = "An autographed Spaceball Jones card!!"
 			P.card_icon = "spaceball_jones"
 		else
-			var/language_type = pick(/datum/language/human,/datum/language/diona,/datum/language/unathi)
+			var/language_type = pick(/datum/language/human,/datum/language/diona,/datum/language/tajaran,/datum/language/unathi)
 			var/datum/language/L = new language_type()
 			var/team = pick("Brickburn Galaxy Trekers","Mars Rovers", "Qerrbalak Saints", "Moghes Rockets", "Ahdomai Lightening")
 			P.name = "[L.get_random_name(pick(MALE,FEMALE))], [year - rand(0,50)] [team]"

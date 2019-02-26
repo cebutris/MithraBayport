@@ -1,14 +1,12 @@
 //Override upstream's voidsuit stuff here
-
-
 //This override is to allow our snowflake species to use voidsuits. Keep this updated with whatever new species you add.
+
 /obj/item/clothing/head/helmet/space/void/Initialize()
 	. = ..()
 	sprite_sheets |= list(
 		SPECIES_AKULA = 'icons/mob/onmob/onmob_head.dmi',
 		SPECIES_VULP = 'icons/mob/onmob/onmob_head.dmi',
 		SPECIES_VASS = 'icons/mob/onmob/onmob_head.dmi',
-		SPECIES_TAJ = 'icons/mob/onmob/onmob_head.dmi',
 		SPECIES_OLDUNATHI = 'icons/mob/onmob/onmob_head.dmi',
 		SPECIES_HUMAN2 = 'icons/mob/onmob/onmob_head.dmi'
 		)
@@ -16,7 +14,6 @@
 		SPECIES_AKULA = 'icons/obj/clothing/obj_head.dmi',
 		SPECIES_VULP = 'icons/obj/clothing/obj_head.dmi',
 		SPECIES_VASS = 'icons/obj/clothing/obj_head.dmi',
-		SPECIES_TAJ = 'icons/obj/clothing/obj_head.dmi',
 		SPECIES_OLDUNATHI = 'icons/obj/clothing/obj_head.dmi',
 		SPECIES_HUMAN2 = 'icons/obj/clothing/obj_head.dmi'
 		)
@@ -27,7 +24,6 @@
 		SPECIES_AKULA = 'icons/mob/onmob/onmob_suit.dmi',
 		SPECIES_VULP = 'icons/mob/onmob/onmob_suit.dmi',
 		SPECIES_VASS = 'icons/mob/onmob/onmob_suit.dmi',
-		SPECIES_TAJ = 'icons/mob/onmob/onmob_suit.dmi',
 		SPECIES_OLDUNATHI = 'icons/mob/onmob/onmob_suit.dmi',
 		SPECIES_HUMAN2 = 'icons/mob/onmob/onmob_suit.dmi'
 		)
@@ -35,7 +31,6 @@
 		SPECIES_AKULA = 'icons/obj/clothing/obj_suit.dmi',
 		SPECIES_VULP = 'icons/obj/clothing/obj_suit.dmi',
 		SPECIES_VASS = 'icons/obj/clothing/obj_suit.dmi',
-		SPECIES_TAJ = 'icons/obj/clothing/obj_suit.dmi',
 		SPECIES_OLDUNATHI = 'icons/obj/clothing/obj_suit.dmi',
 		SPECIES_HUMAN2 = 'icons/obj/clothing/obj_suit.dmi'
 		)

@@ -2965,6 +2965,7 @@
 #include "modular_mithra\code\game\machinery\suit_storage_unit.dm"
 #include "modular_mithra\code\game\machinery\computer\cloning.dm"
 #include "modular_mithra\code\game\mecha\mecha_actions.dm"
+#include "modular_mithra\code\game\objects\items\devices\modkit.dm"
 #include "modular_mithra\code\game\objects\items\weapons\dna_injector.dm"
 #include "modular_mithra\code\game\objects\items\weapons\circuitboards\computer\computer.dm"
 #include "modular_mithra\code\game\objects\items\weapons\circuitboards\machinery\cloning.dm"

@@ -1,6 +1,6 @@
 LEGACY_RECORD_STRUCTURE(virus_records, virus_record)
 
-/datum/disease2/disease
+/datum/disease2/disease // Adding back Tajara. - HTG
 	var/infectionchance = 70
 	var/speed = 1
 	var/spreadtype = "Contact" // Can also be "Airborne"
@@ -11,9 +11,9 @@ LEGACY_RECORD_STRUCTURE(virus_records, virus_record)
 	var/list/datum/disease2/effect/effects = list()
 	var/antigen = list() // 16 bits describing the antigens, when one bit is set, a cure with that bit can dock here
 	var/max_stage = 4
-	var/list/affected_species = list(SPECIES_HUMAN,SPECIES_UNATHI,SPECIES_SKRELL)
+	var/list/affected_species = list(SPECIES_HUMAN,SPECIES_UNATHI,SPECIES_SKRELL,SPECIES_TAJARA)
 
-/datum/disease2/disease/New()
+/datum/disease2/disease/New() // Adding back Tajara. - HTG
 	uniqueID = rand(0,10000)
 	..()
 

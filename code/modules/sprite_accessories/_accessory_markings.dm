@@ -12,6 +12,7 @@
 	var/layer_blend = ICON_OVERLAY
 
 	//Empty list is unrestricted. Should only restrict the ones that make NO SENSE on other species,
+	//like Tajara inner-ear coloring overlay stuff,
 	//like IPC optics overlay stuff.
 	species_allowed = list()
 

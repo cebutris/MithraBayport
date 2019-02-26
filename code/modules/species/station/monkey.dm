@@ -83,7 +83,7 @@
 				touchables += O
 		var/obj/touchy = pick(touchables)
 		touchy.attack_hand(H)
-	
+
 	if(prob(1))
 		H.emote(pick("scratch","jump","roll","tail"))
 
@@ -103,7 +103,7 @@
 	..()
 	H.item_state = lowertext(name)
 
-/datum/species/monkey/alien
+/datum/species/monkey/tajaran // Adding back Tajara. - HTG
 	name = "Farwa"
 	name_plural = "Farwa"
 	health_hud_intensity = 2
@@ -111,8 +111,10 @@
 	icobase = 'icons/mob/human_races/species/monkey/farwa_body.dmi'
 	deform = 'icons/mob/human_races/species/monkey/farwa_body.dmi'
 
+	greater_form = SPECIES_TAJARA
 	flesh_color = "#afa59e"
 	base_color = "#333333"
+	reagent_tag = IS_TAJARA
 	tail = "farwatail"
 	force_cultural_info = list(
 		TAG_CULTURE =   CULTURE_FARWA,

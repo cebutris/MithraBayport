@@ -1,4 +1,4 @@
-/obj/item/clothing/mask/breath
+/obj/item/clothing/mask/breath // Adding back Tajara. - HTG
 	desc = "A close-fitting mask that can be connected to an air supply."
 	name = "breath mask"
 	icon_state = "breath"
@@ -14,6 +14,7 @@
 	down_icon_state = "breathdown"
 	pull_mask = 1
 	sprite_sheets = list(
+		SPECIES_TAJARA = 'icons/mob/species/tajaran/mask.dmi',
 		SPECIES_VOX = 'icons/mob/species/vox/onmob_mask_vox.dmi',
 		SPECIES_UNATHI = 'icons/mob/species/unathi/generated/onmob_mask_unathi.dmi',
 		)

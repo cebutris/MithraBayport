@@ -22,6 +22,9 @@
 #define LANGUAGE_YEOSA          "Yeosa'unathi"
 #define LANGUAGE_LEGALESE       "Legalese"
 
+#define LANGUAGE_SIIK_MAAS "Siik'maas" // Adding back Tajara. - HTG
+#define LANGUAGE_SIIK_TAJR "Siik'tajr" // Adding back Tajara. - HTG
+
 // Language flags.
 #define WHITELISTED  1   // Language is available if the speaker is whitelisted.
 #define RESTRICTED   2   // Language can only be acquired by spawning or an admin.
