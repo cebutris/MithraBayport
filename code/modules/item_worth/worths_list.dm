@@ -383,7 +383,7 @@ var/list/worths = list(
 					/obj/item/clothing/shoes/magboots = 350,
 					/obj/item/clothing/shoes/swat = 100,
 					/obj/item/clothing/shoes/combat = 200,
-//SUITS,
+//SUITS, // Adding back Tajara. - HTG
 					/obj/item/clothing/suit/space/skrell = 1500,
 					/obj/item/clothing/suit/space/void/merc = 3000,
 					/obj/item/clothing/suit/space/void/security = 3000,
@@ -393,7 +393,7 @@ var/list/worths = list(
 					/obj/item/clothing/suit/space/cult = 250,
 					/obj/item/clothing/suit/space = 730,
 					/obj/item/clothing/suit/unathi/mantle = 80,
-					/obj/item/clothing/suit/tajaran/furs = 90, // Adding back Tajara. - HTG
+					/obj/item/clothing/suit/tajaran/furs = 90,
 					/obj/item/clothing/suit/cultrobes = 200,
 					/obj/item/clothing/suit/armor/vest = 550,
 					/obj/item/clothing/suit/armor/bulletproof = 500,
@@ -419,7 +419,7 @@ var/list/worths = list(
 					/obj/item/clothing/suit/fiendcowl = 560,
 					/obj/item/clothing/suit/infilsuit = 250,
 					/obj/item/clothing/suit/straight_jacket/overseercloak = 100,
-//HEADS,
+//HEADS, // Adding back Tajara. - HTG
 					/obj/item/clothing/head/collectable/petehat = 350,
 					/obj/item/clothing/head/collectable = 80,
 					/obj/item/clothing/head/hardhat = 180,
@@ -441,7 +441,7 @@ var/list/worths = list(
 					/obj/item/clothing/head/bomb_hood = 200,
 					/obj/item/clothing/head/radiation = 250,
 					/obj/item/clothing/head/bio_hood = 100,
-					/obj/item/clothing/head/tajaran/scarf = 30, // Adding back Tajara. - HTG
+					/obj/item/clothing/head/tajaran/scarf = 30,
 					/obj/item/clothing/head/helmet/space/void/merc = 2000,
 					/obj/item/clothing/head/helmet/space/void/security = 2000,
 					/obj/item/clothing/head/helmet/space/void = 1900,
