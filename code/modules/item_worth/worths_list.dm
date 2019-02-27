@@ -2,6 +2,7 @@
 //Mainly used so that stuff inside them can also add to their value, and other things like material,
 //stuff like that.
 
+// Adding back Tajara. - HTG
 var/list/worths = list(
 //ROBOT ASSEMBLIES,
 					/obj/item/weapon/secbot_assembly = 180,
@@ -383,7 +384,7 @@ var/list/worths = list(
 					/obj/item/clothing/shoes/magboots = 350,
 					/obj/item/clothing/shoes/swat = 100,
 					/obj/item/clothing/shoes/combat = 200,
-//SUITS, // Adding back Tajara. - HTG
+//SUITS,
 					/obj/item/clothing/suit/space/skrell = 1500,
 					/obj/item/clothing/suit/space/void/merc = 3000,
 					/obj/item/clothing/suit/space/void/security = 3000,
@@ -419,7 +420,7 @@ var/list/worths = list(
 					/obj/item/clothing/suit/fiendcowl = 560,
 					/obj/item/clothing/suit/infilsuit = 250,
 					/obj/item/clothing/suit/straight_jacket/overseercloak = 100,
-//HEADS, // Adding back Tajara. - HTG
+//HEADS,
 					/obj/item/clothing/head/collectable/petehat = 350,
 					/obj/item/clothing/head/collectable = 80,
 					/obj/item/clothing/head/hardhat = 180,

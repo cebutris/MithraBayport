@@ -46,7 +46,6 @@
 				/datum/mil_rank/sol/agent
 			)
 		),
-		// Adding back Tajara. - HTG
 		/datum/species/tajaran = list(
 			/datum/mil_branch/expeditionary_corps = list(
 				/datum/mil_rank/ec/e3,
