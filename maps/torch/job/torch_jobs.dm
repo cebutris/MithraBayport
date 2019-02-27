@@ -10,6 +10,7 @@
 #define HUMAN_ONLY_JOBS /datum/job/captain, /datum/job/hop, /datum/job/cmo, /datum/job/chief_engineer, /datum/job/hos, /datum/job/representative, /datum/job/sea, /datum/job/pathfinder
 	species_to_job_blacklist = list(
 		/datum/species/unathi  = list(HUMAN_ONLY_JOBS, /datum/job/liaison, /datum/job/warden), //Other jobs unavailable via branch restrictions,
+		/datum/species/tajaran = list(HUMAN_ONLY_JOBS, /datum/job/warden),
 		/datum/species/skrell  = list(HUMAN_ONLY_JOBS),
 		/datum/species/machine = list(HUMAN_ONLY_JOBS),
 		/datum/species/diona   = list(HUMAN_ONLY_JOBS, /datum/job/officer, /datum/job/bodyguard, /datum/job/rd, /datum/job/liaison, /datum/job/warden),	//Other jobs unavailable via branch restrictions,
@@ -31,7 +32,7 @@
 						/datum/job/merchant, /datum/job/stowaway
 						)
 
-	access_modify_region = list(
+	access_modify_region = list( // Adding back Tajara. - HTG
 		ACCESS_REGION_SECURITY = list(access_change_ids),
 		ACCESS_REGION_MEDBAY = list(access_change_ids),
 		ACCESS_REGION_RESEARCH = list(access_rd, access_change_ids),
@@ -42,13 +43,13 @@
 		ACCESS_REGION_NT = list(access_rd)
 	)
 
-/datum/map/torch/setup_map()
+/datum/map/torch/setup_map() // Adding back Tajara. - HTG
 	..()
 	for(var/job_type in GLOB.using_map.allowed_jobs)
 		var/datum/job/job = decls_repository.get_decl(job_type)
 		// Most species are restricted from SCG security and command roles
 		if((job.department_flag & (COM)) && job.allowed_branches.len && !(/datum/mil_branch/civilian in job.allowed_branches))
-			for(var/species_name in list(SPECIES_IPC, SPECIES_SKRELL, SPECIES_UNATHI))
+			for(var/species_name in list(SPECIES_IPC, SPECIES_TAJARA, SPECIES_SKRELL, SPECIES_UNATHI))
 				var/datum/species/S = all_species[species_name]
 				var/species_blacklist = species_to_job_blacklist[S.type]
 				if(!species_blacklist)

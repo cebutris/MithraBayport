@@ -20,7 +20,8 @@
 	desc = "A baggy shirt bearing the seal of the SCG Expeditionary Corps and some dorky looking blue shorts."
 	icon_state = "expeditionpt"
 	worn_state = "expeditionpt"
-	sprite_sheets = list(
+	sprite_sheets = list( // Adding back Tajara. - HTG
+		SPECIES_TAJARA = 'icons/mob/species/tajaran/uniform.dmi',
 		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_under_unathi.dmi'
 		)
 
@@ -45,7 +46,8 @@
 	icon_state = "blackutility"
 	item_state = "bl_suit"
 	worn_state = "blackutility"
-	sprite_sheets = list(
+	sprite_sheets = list( // Adding back Tajara. - HTG
+		SPECIES_TAJARA = 'icons/mob/species/tajaran/uniform.dmi',
 		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_under_unathi.dmi'
 		)
 
@@ -54,7 +56,8 @@
 	desc = "The utility uniform of the SCG Expeditionary Corps, made from biohazard resistant material. This one has silver trim."
 	icon_state = "blackutility_crew"
 	worn_state = "blackutility_crew"
-	sprite_sheets = list(
+	sprite_sheets = list( // Adding back Tajara. - HTG
+		SPECIES_TAJARA = 'icons/mob/species/tajaran/uniform.dmi',
 		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_under_unathi.dmi'
 		)
 
@@ -63,7 +66,8 @@
 	desc = "A black turtleneck and skirt, the elusive ladies' uniform of the Expeditionary Corps."
 	icon_state = "blackservicefem"
 	worn_state = "blackservicefem"
-	sprite_sheets = list(
+	sprite_sheets = list( // Adding back Tajara. - HTG
+		SPECIES_TAJARA = 'icons/mob/species/tajaran/uniform.dmi',
 		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_under_unathi.dmi'
 		)
 
@@ -251,7 +255,8 @@
 	desc = "The service uniform of the SCG Expeditionary Corps in silver trim."
 	icon_state = "greydress"
 	worn_state = "greydress"
-	sprite_sheets = list(
+	sprite_sheets = list( // Adding back Tajara. - HTG
+		SPECIES_TAJARA = 'icons/mob/species/tajaran/uniform.dmi',
 		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_under_unathi.dmi'
 		)
 

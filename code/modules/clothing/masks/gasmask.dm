@@ -46,7 +46,7 @@
 
 	return filtered
 
-/obj/item/clothing/mask/gas/half
+/obj/item/clothing/mask/gas/half // Adding back Tajara. - HTG
 	name = "face mask"
 	desc = "A compact, durable gas mask that can be connected to an air supply."
 	icon_state = "halfgas"
@@ -55,6 +55,9 @@
 	body_parts_covered = FACE
 	w_class = ITEM_SIZE_SMALL
 	armor = list(melee = 10, bullet = 10, laser = 10, energy = 0, bomb = 0, bio = 55, rad = 0)
+	sprite_sheets = list(
+		SPECIES_TAJARA = 'icons/mob/species/tajaran/mask.dmi',
+		)
 
 //In scaling order of utility and seriousness
 

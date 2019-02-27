@@ -13,7 +13,7 @@ var/global/list/robot_modules = list(
 	"Party"         = /obj/item/weapon/robot_module/uncertified/party
 	)
 
-/obj/item/weapon/robot_module
+/obj/item/weapon/robot_module // Adding back Tajara. - HTG
 	name = "robot module"
 	icon = 'icons/obj/module.dmi'
 	icon_state = "std_module"
@@ -27,7 +27,8 @@ var/global/list/robot_modules = list(
 		LANGUAGE_SOL_COMMON = 1,
 		LANGUAGE_LUNAR = 1,
 		LANGUAGE_UNATHI = 0,
-		LANGUAGE_SIIK_MAAS = 0,
+		LANGUAGE_SIIK_MAAS	= 1,
+		LANGUAGE_SIIK_TAJR	= 0,
 		LANGUAGE_SKRELLIAN = 0,
 		LANGUAGE_GUTTER = 1,
 		LANGUAGE_SIGN = 0,

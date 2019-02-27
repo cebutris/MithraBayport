@@ -43,12 +43,12 @@
 	autolinkers = list("Exploration")
 
 // Suit cyclers and storage
-/obj/machinery/suit_cycler/exploration
+/obj/machinery/suit_cycler/exploration // Adding back Tajara. - HTG
 	name = "Exploration suit cycler"
 	model_text = "Exploration"
 	req_access = list(access_explorer)
 	available_modifications = list(/decl/item_modifier/space_suit/explorer)
-	species = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_UNATHI)
+	species = list(SPECIES_HUMAN,SPECIES_SKRELL,SPECIES_TAJARA,SPECIES_UNATHI)
 
 /obj/machinery/suit_storage_unit/explorer
 	name = "Exploration Voidsuit Storage Unit"

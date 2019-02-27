@@ -1,4 +1,4 @@
-/obj/item/clothing/mask/balaclava
+/obj/item/clothing/mask/balaclava // Adding back Tajara. - HTG
 	name = "balaclava"
 	desc = "Designed to both hide identities and keep your face comfy and warm."
 	icon_state = "balaclava"
@@ -11,6 +11,7 @@
 	pull_mask = 1
 	w_class = ITEM_SIZE_SMALL
 	sprite_sheets = list(
+		SPECIES_TAJARA = 'icons/mob/species/tajaran/mask.dmi',
 		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_mask_unathi.dmi',
 		)
 

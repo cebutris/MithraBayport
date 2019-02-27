@@ -1,5 +1,5 @@
 //NASA Voidsuit
-/obj/item/clothing/head/helmet/space/void
+/obj/item/clothing/head/helmet/space/void // Adding back Tajara. - HTG
 	name = "void helmet"
 	desc = "A high-tech dark red space suit helmet. Used for AI satellite maintenance."
 	icon_state = "void"
@@ -13,16 +13,18 @@
 	species_restricted = list(SPECIES_HUMAN, SPECIES_IPC)
 	sprite_sheets = list(
 		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_head_helmet_unathi.dmi',
+		SPECIES_TAJARA = 'icons/mob/species/tajaran/helmet.dmi',
 		SPECIES_SKRELL = 'icons/mob/species/skrell/onmob_head_skrell.dmi',
 		)
 	sprite_sheets_obj = list(
 		SPECIES_UNATHI = 'icons/obj/clothing/species/unathi/obj_head_unathi.dmi',
+		SPECIES_TAJARA = 'icons/mob/species/tajaran/helmet.dmi',
 		SPECIES_SKRELL = 'icons/obj/clothing/species/skrell/obj_head_skrell.dmi',
 		)
 
 	light_overlay = "helmet_light"
 
-/obj/item/clothing/suit/space/void
+/obj/item/clothing/suit/space/void // Adding back Tajara. - HTG
 	name = "voidsuit"
 	icon_state = "void"
 	//item_state = "syndie_hardsuit"
@@ -37,10 +39,12 @@
 	species_restricted = list(SPECIES_HUMAN, SPECIES_SKRELL, SPECIES_IPC)
 	sprite_sheets = list(
 		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_suit_unathi.dmi',
+		SPECIES_TAJARA = 'icons/mob/species/tajaran/helmet.dmi',
 		SPECIES_SKRELL = 'icons/mob/species/skrell/onmob_suit_skrell.dmi',
 		)
 	sprite_sheets_obj = list(
 		SPECIES_UNATHI = 'icons/obj/clothing/species/unathi/obj_suit_unathi.dmi',
+		SPECIES_TAJARA = 'icons/mob/species/tajaran/helmet.dmi',
 		SPECIES_SKRELL = 'icons/obj/clothing/species/skrell/obj_suit_skrell.dmi',
 		)
 

@@ -73,6 +73,7 @@
 	ex:
 	sprite_sheets = list(
 		SPECIES_UNATHI = 'icons/lizard/are/bad'
+		SPECIES_TAJARA = 'icons/cat/are/bad'
 		)
 	If index term exists and icon_override is not set, this sprite sheet will be used.
 	*/

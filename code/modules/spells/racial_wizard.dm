@@ -49,6 +49,24 @@
 			var/obj/item/I = new /obj/item/weapon/spacecash/bundle/c1000()
 			src.handle_item_insertion(I,1)
 
+//TAJARAN // Adding back Tajara. - HTG
+/spell/messa_shroud
+	name = "Messa's Shroud"
+	desc = "This spell causes darkness at the point of the caster for a duration of time."
+
+	school = "racial"
+	spell_flags = 0
+	invocation_type = SpI_EMOTE
+	invocation = "mutters a small prayer, the light around them darkening."
+	charge_max = 300 //30 seconds
+
+	range = 5
+	duration = 150 //15 seconds
+
+	cast_sound = 'sound/effects/bamf.ogg'
+
+	hud_state = "wiz_tajaran"
+
 /spell/messa_shroud/choose_targets()
 	return list(get_turf(holder))
 

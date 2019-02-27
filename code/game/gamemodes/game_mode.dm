@@ -288,7 +288,8 @@ var/global/list/additional_antag_types = list()
 		"an emissary for the gestalt requesting a security detail",
 		"radical Skrellian transevolutionaries",
 		"classified security operations",
-		"a gargantuan glowing goat"
+		"a gargantuan glowing goat",
+		"a Tajaran slave rebellion" // Adding back Tajara. - HTG
 		)
 	command_announcement.Announce("The presence of [pick(reasons)] in the region is tying up all available local emergency resources; emergency response teams cannot be called at this time, and post-evacuation recovery efforts will be substantially delayed.","Emergency Transmission")
 
@@ -368,7 +369,7 @@ var/global/list/additional_antag_types = list()
 		text += "There were <b>no survivors</b> (<b>[ghosts] ghosts</b>)."
 
 	to_world(text)
-	
+
 	if(clients > 0)
 		SSstatistics.set_field("round_end_clients",clients)
 	if(ghosts > 0)

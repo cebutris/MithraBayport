@@ -25,6 +25,8 @@
 #define IS_SLIME   6
 #define IS_NABBER  7
 
+#define IS_TAJARA  8 // Adding back Tajara. - HTG
+
 #define CE_STABLE        "stable"       // Inaprovaline
 #define CE_ANTIBIOTIC    "antibiotic"   // Spaceacilin
 #define CE_BLOODRESTORE  "bloodrestore" // Iron/nutriment

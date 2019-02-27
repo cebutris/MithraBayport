@@ -11,7 +11,8 @@
 /*
  * Welding mask
  */
-/obj/item/clothing/head/welding
+
+/obj/item/clothing/head/welding // Adding back Tajara. - HTG
 	name = "welding helmet"
 	desc = "A head-mounted face cover designed to protect the wearer completely from space-arc eye."
 	icon_state = "welding"
@@ -30,7 +31,9 @@
 	var/base_state
 	flash_protection = FLASH_PROTECTION_MAJOR
 	tint = TINT_HEAVY
-
+	sprite_sheets = list(
+		SPECIES_TAJARA = 'icons/mob/species/tajaran/helmet.dmi'
+		)
 /obj/item/clothing/head/welding/attack_self()
 	if(!base_state)
 		base_state = icon_state

@@ -1,3 +1,89 @@
+/datum/sprite_accessory/hair/taj
+	name = "Tajaran Ears"
+	icon_state = "ears_plain"
+	species_allowed = list(SPECIES_TAJARA)
+	icon = 'icons/mob/human_races/species/tajaran/hair.dmi'
+
+/datum/sprite_accessory/hair/taj/ears_clean
+	name = "Tajara Clean"
+	icon_state = "hair_clean"
+
+/datum/sprite_accessory/hair/taj/ears_bangs
+	name = "Tajara Bangs"
+	icon_state = "hair_bangs"
+
+/datum/sprite_accessory/hair/taj/ears_braid
+	name = "Tajara Braid"
+	icon_state = "hair_tbraid"
+
+/datum/sprite_accessory/hair/taj/ears_shaggy
+	name = "Tajara Shaggy"
+	icon_state = "hair_shaggy"
+
+/datum/sprite_accessory/hair/taj/ears_mohawk
+	name = "Tajaran Mohawk"
+	icon_state = "hair_mohawk"
+
+/datum/sprite_accessory/hair/taj/ears_plait
+	name = "Tajara Plait"
+	icon_state = "hair_plait"
+
+/datum/sprite_accessory/hair/taj/ears_straight
+	name = "Tajara Straight"
+	icon_state = "hair_straight"
+
+/datum/sprite_accessory/hair/taj/ears_long
+	name = "Tajara Long"
+	icon_state = "hair_long"
+
+/datum/sprite_accessory/hair/taj/ears_rattail
+	name = "Tajara Rat Tail"
+	icon_state = "hair_rattail"
+
+/datum/sprite_accessory/hair/taj/ears_spiky
+	name = "Tajara Spiky"
+	icon_state = "hair_tajspiky"
+
+/datum/sprite_accessory/hair/taj/ears_messy
+	name = "Tajara Messy"
+	icon_state = "hair_messy"
+
+/datum/sprite_accessory/hair/taj/ears_bob
+	name = "Tajara Bob"
+	icon_state = "hair_tbob"
+
+/datum/sprite_accessory/skin/tajaran
+	name = "Default tajaran skin"
+	icon_state = "default"
+	icon = 'icons/mob/human_races/species/tajaran/body.dmi'
+	species_allowed = list(SPECIES_TAJARA)
+
+/datum/sprite_accessory/facial_hair/taj
+	name = "Tajara Sideburns"
+	icon_state = "facial_sideburns"
+	species_allowed = list(SPECIES_TAJARA)
+	icon = 'icons/mob/human_races/species/tajaran/facial.dmi'
+
+/datum/sprite_accessory/facial_hair/taj/mutton
+	name = "Tajara Mutton"
+	icon_state = "facial_mutton"
+
+/datum/sprite_accessory/facial_hair/taj/pencilstache
+	name = "Tajara Pencilstache"
+	icon_state = "facial_pencilstache"
+
+/datum/sprite_accessory/facial_hair/taj/moustache
+	name = "Tajara Moustache"
+	icon_state = "facial_moustache"
+
+/datum/sprite_accessory/facial_hair/taj/goatee
+	name = "Tajara Goatee"
+	icon_state = "facial_goatee"
+
+/datum/sprite_accessory/facial_hair/taj/smallstache
+	name = "Tajara Smallsatche"
+	icon_state = "facial_smallstache"
+
 /datum/sprite_accessory/marking/taj
 	name = "Socks Coloration (Taj)"
 	icon_state = "taj_pawsocks"

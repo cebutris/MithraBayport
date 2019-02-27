@@ -2,7 +2,7 @@
  * Defines the helmets, gloves and shoes for rigs.
  */
 
-/obj/item/clothing/head/helmet/space/rig
+/obj/item/clothing/head/helmet/space/rig // Adding back Tajara. - HTG
 	name = "helmet"
 	item_flags = ITEM_FLAG_THICKMATERIAL
 	flags_inv = 		 HIDEEARS|HIDEEYES|HIDEFACE|BLOCKHAIR
@@ -11,6 +11,7 @@
 	cold_protection =    HEAD|FACE|EYES
 	brightness_on = 4
 	sprite_sheets = list(
+		SPECIES_TAJARA = 'icons/mob/species/tajaran/helmet.dmi',
 		SPECIES_SKRELL = 'icons/mob/species/skrell/onmob_head_skrell.dmi',
 		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_head_helmet_unathi.dmi',
 		)
@@ -34,7 +35,7 @@
 	gender = PLURAL
 	icon_base = null
 
-/obj/item/clothing/suit/space/rig
+/obj/item/clothing/suit/space/rig // Adding back Tajara. - HTG
 	name = "chestpiece"
 	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/tank,/obj/item/device/suit_cooling_unit)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
@@ -48,6 +49,7 @@
 	resilience = 0.2
 	can_breach = 1
 	sprite_sheets = list(
+		SPECIES_TAJARA = 'icons/mob/species/tajaran/suit.dmi',
 		SPECIES_UNATHI = 'icons/mob/species/unathi/onmob_suit_unathi.dmi',
 		)
 	var/list/supporting_limbs = list() //If not-null, automatically splints breaks. Checked when removing the suit.
